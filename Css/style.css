@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#loader h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    color:black;
+    font-family: cursive;    
+
+}
+#loader
+{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background:#fff url("https://i.pinimg.com/originals/ca/89/fb/ca89fbce5e5c68f46d5330946c58ddc6.gif") no-repeat center;
+    background-size: cover;
+    z-index: 99999;
+}
+
+.header {
+    height: 100vh;
+    background: rgba(0, 0, 100, 0.5);
+}
+
+.video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    
+}
+#mainhead
+{
+    color:white;
+    position: absolute;
+    top:30%;
+    left:33%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+
+}
+
+.mango {
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 10px yellow, 4px 2px 5px blue;
+    transition: all 10s ease-in;
+    cursor: pointer;
+    height: 20%;
+}
+
+.mango h1:hover {
+    transform: scale(1.1);
+    /* background-color: white; */
+    color: black;
+
+}
+
+.menu {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: -10px;
+
+
+}
+
+.menu ul {
+    display: flex;
+    
+}
+
+.menu ul li {
+
+    list-style: none;
+    line-height: 80px;
+
+   
+
+}
+
+.menu ul li a {
+    color: white;
+    
+    padding: 20px 100px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+    
+}
+.menu ul li a:hover {
+    
+    border-bottom: 5px solid green;
+    
+}
+
+
+#skill2 img
+{
+    width: 25px;
+    height:22px;
+    filter: invert(100%);
+    position: absolute;
+    left:25%;
+}
+#Project2 img
+{
+    width:30px;
+    height: 35px;
+    filter: invert(100%);
+    position: absolute;
+    left:64%;
+    top:30%;
+}
+
+
+
+.button {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    /* border: 1px solid #fff; */
+    border-radius: 6px;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+.btn2 {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: black;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+    text-transform: uppercase;
+    background-color:white;
+    position: absolute;
+    left: 22%;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 15px white;
+    position: relative;
+    
+}
+.btn2::before
+{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    /* background: #d35400; */
+    height: 100%;
+    width:100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: .5s;
+}
+.btn2:hover::before
+{  
+    filter: blur(3px);
+    /* transform: scale(1.2); */
+    /* box-shadow: 0 0 15px #d35400; */
+}
+.btn2:hover {
+    /* background-color: blue; */
+    color:blue;
+    box-shadow: 0 0 15px #fff;
+    text-shadow: 0 0 15px #fff;
+}
+
+.btn:hover {
+    background-color: green;
+    color: black;
+}
+
+h3 {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    transform: translate(-50%, 100%);
+    text-transform: uppercase;
+
+}
+
+#change:after {
+    color: lime;
+    content: "";
+    /* border-right: 2px solid yellow; */
+    overflow: hidden;
+    animation: changeType 5s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes changeType {
+    0% {
+        content: "Software Developer";
+
+    }
+
+    25% {
+        content: "Youtuber";
+    }
+
+    50% {
+        content: "Enthusiatic";
+    }
+
+    75% {
+        content: "Blogger";
+    }
+
+    90% {
+        content: "Web Developer";
+    }
+
+    100% {
+        content: "Programmer";
+    }
+}
+
+.headline {
+    color: white;
+    font-family: cursive;
+}
+
+#AboutMe {
+    background-color: whitesmoke;
+    /* border: 2px solid black; */
+    height: 90%;
+}
+
+#content {
+    height: 400px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    padding: 25px;
+    text-align: left;
+
+}
+
+#image img {
+    width: 10%;
+    height: 80%;
+    border-radius: 130px;
+    float: right;
+    padding: 30px;
+}
+
+#abouthead {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#abouthead2 {
+    color: blue;
+}
+
+.Projectsection {
+
+    background: url(../Image/image3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+.Projectsection h1 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    padding: 15px 0px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    width: 97%;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../Image/contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+.h-unique
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+}
+.btn3
+{
+    margin: 13px;
+    margin-left: 120px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color:white;
+    background-color:blue;
+    border: 1px solid blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 1s ease-in-out;
+    width: 60%;
+}
+.btn3:hover
+{
+    background-color: green;
+}
+.SocialMedia iframe
+{
+    position: absolute;
+    /* left:4%; */
+    top:65%;
+    
+
+}
+.SocialMedia h1
+{
+    position: absolute;
+    color:white;
+    left:42%;
+    top:65%;
+    font-size: 2rem;
+}
+#my-form-status
+{
+    color:black;
+    font-size: 1.5rem;
+    position: absolute;
+    left:40%;
+}
+#contact img
+{
+    border-radius: 145px;
+    /* position: absolute; */
+    width:100px;
+    margin-left:45.5%;
+    
+
+    
+}
+.Projectsection{
+    padding:0px 40px;
+    
+}
+.Projectsub{
+    color:#fff;
+    background-color: rgba(14, 105, 180, 1);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    padding:15px 20px;
+    border:2px solid rgba(14, 105, 180, 0.877);
+    border-radius: 20px;
+    margin: 20px auto;
+    text-shadow: 2px 2px 10px white;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width:1280px)
+{
+    .menu ul li a{
+        padding:15px 65px;
+
+    }
+    .menu ul li{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:970px)
+{
+    .menu ul li a{
+        font-size: 1rem;
+        padding: 15px 50px;
+    }
+}
+@media screen and (max-width: 780px) {
+    #content {
+
+        font-size: 1rem;
+        padding: 20px;
+        text-align: left;
+    }  
+    .menu ul li a 
+    {
+      padding: 15px 15px;
+      font-size: 1rem;
+    }
+    .mango{
+        font-size: 1rem;
+        left:25%;
+    }
+    h3
+    {
+        font-size: 1rem;
+        left:50%;
+    }
+    .btn2
+    {
+        font-size: 1rem;
+        left:9%;
+        top:30%;
+    }
+    
+    .btn
+    {
+        font-size: 0.7rem;
+    }
+    .btn3
+    {
+        margin-left: 50px;
+    }
+    #mainhead
+    {
+        left:17%;
+        font-size: 1rem;
+    }
+    .SocialMedia h1{
+        left:25%;
+    }
+}
+
+@media screen and (max-width: 460px)
+{
+    #mainhead
+    {
+        left:7%;
+        font-size: 0.9rem;
+    }
+    .menu ul li a 
+    {
+      padding: 10px 10px;
+      font-size: 1rem;
+    }
+    
+    .mango{
+        left:8%;
+        font-size: 0.8rem;
+        padding: 20px  30px;
+        width:60%;
+    }
+    .SocialMedia iframe
+    {
+        top:70%;
+    }
+    .SocialMedia h1{
+        top:70%;
+        left:12%;
+    }
+
+}
+@media screen and (max-width:395px){
+    .menu ul li a 
+    {
+      padding: 10px 2px;
+      font-size: 1rem;
+    } 
+    
+    
+    .mango{
+    
+        padding: 30px  35px;
+        left:3%;
+        width:70%;
+        text-align: center;
+    }
+     #ChangeContent h3{
+        font-size: 0.7rem;
+        position: absolute;
+        top:60%;
+     }
+     .btn2{
+         left:2%;
+     }
+     .btn2:hover::before
+    {  
+    /* filter: blur(3px); */
+      transform: scale(1);
+    
+    }
+    #content {
+
+        height: 550px;
+        padding: 15px;
+        text-align: left;
+    }  
+}

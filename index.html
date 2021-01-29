@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body onload="setTimeout(myFunction,5000)">
+    <div id="loader">
+        <h1>Loading Akash PortFolio</h1>
+    </div>
+    <!-- header Start -->
+    <section class="header">
+        <nav>
+
+            <div class="menu">
+
+                <ul>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li id="skill2"><a href="#myskills"> Skill</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li id="Project2"><a href="#Project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <video autoplay loop class="video-background" muted plays-inline>
+            <source src="Background.mp4" type="video/mp4">
+        </video>
+        <div id="mainhead">
+            <h1>Welcome To My <span style="color:rgba(14, 105, 180, 0.877)">PortFolio!</span></h1>
+        </div>
+        <div class="mango" id="home">
+            <h1>Akash Khandelwal</h1>
+            <a href="https://drive.google.com/file/d/1UGPzkZ82RAJQqXdTFWeD0QKDReQuMT3d/view?usp=sharing"
+                class="btn2">Download Resume</a>
+        </div>
+        <div id=ChangeContent>
+            <h3> I am a <span id="change"></span> </h3>
+        </div>
+
+        <div class="SocialMedia">
+            <h1>Connect With Me</h1>
+            <iframe src="SocailMedia.html" frameborder="0" width="100%"></iframe>
+        </div>
+
+    </section>
+    <!-- header-End-->
+
+
+    <!-- Myskills Section Start -->
+    <section id="myskills">
+        <iframe src="Myskills.html" width="100%" height="700px"></iframe>
+    </section>
+    <!-- Myskills Section End -->
+
+
+    <!-- About Me Section Start -->
+    <section id="AboutMe">
+        <h1 id="abouthead">Get To Know <span id="abouthead2">Me </span></h1>
+        <div id="image"><img src="Image/AkashKhandelwal.jpg" alt=""> </div>
+        <div id="content">
+            <p> <b>A Little Bit <span style="color:blue"> About Myself </span></b></p>
+            <p>Hi! myself Akash Khandelwal. I am completed my graduation in Bsc Computer Science from
+                St. Aloysius College Jabalpur. I had completed my Matriculation and Intermediate
+                from Vaishnavi Public School,Nowrozabad Distt Umaria and secured 78% in MP board and 83% in
+                MP board respectively.</p>
+            <br>
+            <p>I am an innovative and enthusiastic person. I am focused and learning new things excites me. My passion
+                in life is to gain knowledge. Knowledge gives you power to be right and better than others.I don't fear
+                failures or rejections they are ways to enrich you and glorify your personality. Failures are
+                experiences you gain from your mistakes.</p>
+            <br>
+            <p>I aspire to be an excellent Software Engineer and use my skills to make something productive and helpful
+                for the nation. My greatest strength is my positive attitude , even during the most hardest of times. My
+                only weakness is to never give up no matter how hard things hit me , how much they destroy me I accept
+                them as a challenge and don't let them break me. </p>
+        </div>
+    </section>
+    <!-- About Me Section End -->
+
+    <!-- Project Section Start  -->
+    <section id="Project">
+        <div class="Projectsection">
+            <h1><b>Projects</b></h1>
+            <div class="Projectsub">
+                <p>I made a responsive Food delivery site containing Four section Home,Services,AboutUs and Contact us
+                    Menu-Category Page and Single
+                    Menu Category Page.I would love to make website.<a
+                        href="https://akashkhandelwal191.github.io/FoodDelivery/" target="newtab">Click to see My
+                        Project:1</a></p>
+            </div>
+
+            <div class="Projectsub">
+                <p>I made few interesting challenges using HTML5,CSS and Javascript(My Favourites are Snake Water Gun
+                    Game)Play and Enjoy!!<a href="https://akashkhandelwal191.github.io/SnakeWaterGunGame/"
+                        target="newtab">Click to see My Project:2</a> </p>
+            </div>
+            <div class="Projectsub">
+                <p>Made Virtual Desktop Assistant using Python and Used lot of library for make this Assistant
+                    Convenient named "Alexa"(Wolfram Alpha,Open WeatherAPI,NewsAPI,Speech
+                    Recognition,pysstx3,Wikipedia,etc.)<a
+                        href="https://github.com/Akashkhandelwal191/VirtualDesktopAssistant" target="newtab">Click to see My
+                        Project:3</a> </p>
+            </div>
+            <div class="Projectsub">
+                <p>Made a personalised website showing what skills I have learned so far and some of my Projects that
+                    done yet.You
+                    guessed it right! it's the one you are looking at right now(thought of mentioning it too:))</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Project Section End  -->
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+        <h4 class="h-unique"> Give Your <span style="color:rgba(14, 105, 180, 0.877)">Feedback </span>Here </h4>
+        <div><img src="Image/email.jpg" alt=""></div>
+        <h4 class="h-unique">Shoot me a <span style="color:rgba(14, 105, 180, 0.877)"> Message</span></h4>
+
+        <div id="contact-box">
+            <form id="my-form" action="https://formspree.io/f/xwkwyweo" method="POST">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" onkeypress="return (event.charCode > 64 && 
+                    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" id="name"
+                        placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+
+                <button class="btn3" type="submit" id="my-form-button"> Send Message </button>
+                <p id="my-form-status"></p>
+            </form>
+        </div>
+
+    </section>
+    <!-- Contact Section End -->
+
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="center">
+            Copyright &copy; Akash Khandelwal. All rights reserved!
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script>
+        var Preloader = document.getElementById("loader");
+        function myFunction() {
+
+            Preloader.style.display = "none";
+
+        }
+
+    </script>
+
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+
+            // get the form elements defined in your form HTML above
+
+            var form = document.getElementById("my-form");
+            var button = document.getElementById("my-form-button");
+            var status = document.getElementById("my-form-status");
+
+            // Success and Error functions for after the form is submitted
+
+            function success() {
+                form.reset();
+
+                // status.innerHTML = "Thanks!";
+                window.alert("Thanks!Your Response has been Recorded");
+            }
+
+            function error() {
+                form.reset();
+
+                window.alert("Oops! There was a problem.");
+
+            }
+
+            // handle the form submission event
+
+            form.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                var data = new FormData(form);
+                ajax(form.method, form.action, data, success, error);
+            });
+        });
+
+        // helper function for sending an AJAX request
+
+        function ajax(method, url, data, success, error) {
+            var xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            xhr.setRequestHeader("Accept", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                if (xhr.status === 200) {
+                    success(xhr.response, xhr.responseType);
+                } else {
+                    error(xhr.status, xhr.response, xhr.responseType);
+
+                }
+            };
+            xhr.send(data);
+        }
+    </script>
+</body>
+
+</html>

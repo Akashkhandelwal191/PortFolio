@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        body
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            /* background: #262626; */
+        }
+        ul
+        {
+            display: flex;
+        }
+        ul li
+        {
+            position: relative;
+            display: block;
+            color:#666;
+            font-size: 30px;
+            height: 60px;
+            width: 60px;
+            /* background: #171515; */
+            line-height: 60px;
+            border-radius: 50%;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        ul li::before
+        {
+            position: absolute;
+            content: "";
+            top:0;
+            left:0;
+            background: #d35400;
+            height: 100%;
+            width:100%;
+            border-radius: 50%;
+            z-index: -1;
+            transform: scale(0.9);
+            transition: .5s;
+       }
+       ul li:nth-child(1):before
+       {
+           background: #4267B2;
+       }
+       ul li:nth-child(5):before
+       {
+           background: darkred;
+       }
+       ul li:nth-child(2)::before
+       {
+           background: #4267B2;
+           
+       }
+       ul li:nth-child(3):before
+       {
+           background: darkmagenta;
+       }
+       ul li:nth-child(4):before
+       {
+           background: slateblue;
+       }
+       ul li:nth-child(6):before
+       {
+           background: black;
+       }
+       ul li:hover::before
+       {  
+           filter: blur(3px);
+           transform: scale(1.2);
+           /* box-shadow: 0 0 15px #d35400; */
+       }
+       ul li:hover
+       {
+           color:#ffa502;
+           box-shadow: 0 0 15px #d35400;
+           text-shadow: 0 0 15px #d35400;
+       }
+       @media screen  and (max-width: 470px){
+           ul li{
+            margin: 0 0;
+            border-radius: 10%;
+           }
+       }
+    </style>
+</head>
+<body>
+    
+        
+    
+    <ul>
+
+        <li><a href="https://m.facebook.com/akash.khandelwal.1042?ref=bookmarks" target="newtab"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/skykhandelwal26" target="newtab"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/skykhandelwal1999" target="newtab"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/akash-khandelwal-5b09531aa" target="newtab"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCW6rW8esjHbIMTccfbiJdPw" target="newtab"><i class="fab fa-youtube"></i></a></li>
+        <li><a href="https://github.com/Akashkhandelwal191" target="newtab"><i class="fab fa-github"></i></a></li>
+        
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Myskills</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    { 
+        overflow: hidden; 
+        min-width: 400px;
+        height: 100vh;
+        width: 100vw;
+        background: url(Image/back.jpg) no-repeat;
+        background-position: center;
+        background-size:cover;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .container
+    {
+        
+        width:80%;
+        margin:40px auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,170px);
+        grid-gap:10px 10px;
+        
+    }
+    .items
+    {
+        background: black;
+        opacity: 0.7;
+        color:white;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 10px -10px 10px white;
+    }
+
+   .items1:hover
+   {
+       transform: scale(1.03);
+       
+   }
+   
+   .items2:hover
+   {
+       transform: scale(1.03);
+   }
+
+   
+   .items3:hover
+   {
+       transform: scale(1.03);
+   }
+
+   
+   .items4:hover
+   {
+       transform: scale(1.03);
+   }
+
+   
+   .items5:hover
+   {
+       transform: scale(1.03);
+   }
+
+   
+   .items6:hover
+   {
+       transform: scale(1.03);
+   }
+
+   .heading
+   {
+       background-color: black;
+       opacity: 0.6;
+       text-align: center;
+       padding: 5px 0px;
+       color:wheat;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   h4
+   {
+       text-align: left;
+       margin-left:130px;
+       margin-top: 5px;
+   }
+   @media screen and (max-width:800px){
+       .container
+       {
+           grid-template-columns: repeat(2,250px);
+           margin:50px 0px;
+           grid-template-rows:200px;
+       }
+       h4{
+           text-align: left;
+           margin-left: 0px;
+       }
+   }
+   @media screen and (max-width: 450px){
+       .container{
+           grid-template-columns: repeat(2,170px);
+           
+       }
+       h3{
+           font-size: 1rem;
+       }
+   }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 class="animate__animated animate__flip animate__infinite">My Skills</h1>
+        <h3>Here is What <span style="color:blue">I Have Learned so Far</span></h3>
+    </div>
+    <div class="container">
+        <div class="items items1"><h3 class="animate__animated animate__flipInX animate__infinite">Programming Languages</h3>
+            <h4>>C</h4>
+            <h4>>C++</h4>
+            <h4>>Java</h4>
+            <h4>>Python</h4>
+            <h4>>Javascript</h4>
+        </div>
+        <div class="items items2"><h3 class="animate__animated animate__flipInX animate__infinite">Front-End Technology</h3>
+            <h4>>HTML5</h4>
+            <h4>>CSS3</h4>
+            <h4>>Javascript</h4>
+        </div>
+        <div class="items items3"><h3 class="animate__animated animate__flipInX animate__infinite">Developer Tools</h3>
+            <h4>>Microsoft Visual Studio</h4>
+            <h4>>Sublime Text</h4>
+            <h4>>Brackets</h4>
+            <h4>>Pycharm</h4>
+            <h4>>Jupyter</h4>
+            <h4>>Git</h4>
+        </div>
+        <div class="items items4"><h3 class="animate__animated animate__flipInX animate__infinite">Back-End Technology</h3>
+            <h4>>Php</h4>
+            <h4>>Nodejs,ExpressJs</h4>
+            <h4>>Django,Flask(Python)</h4>
+        </div>
+        <div class="items items5"><h3 class="animate__animated animate__flipInX animate__infinite">FrameWork and Libraries</h3>
+            <h4>>Bootstrap</h4>
+            <h4>>ReactJs</h4>
+            <h4>>Jquery,ES6</h4>
+            <h4>>JSON</h4>
+            <h4>>AJAX</h4>
+        </div>
+        <div class="items items6"><h3 class="animate__animated animate__flipInX animate__infinite">DataBases</h3>
+            <h4>>MySQL</h4>
+            <h4>>MongoDB</h4>
+        </div>
+    </div>
+</body>
+</html>
