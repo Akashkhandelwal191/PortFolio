@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* new change */
+    box-sizing: border-box;   
 }
 
 html {
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
-   
+    
+    margin:0;
+    
 }
 #loader h1
 {
@@ -444,6 +446,9 @@ footer {
     }
 }
 @media screen and (max-width: 780px) {
+   
+    
+   
     #content {
 
         font-size: 1rem;
@@ -491,6 +496,9 @@ footer {
 
 @media screen and (max-width: 460px)
 {
+
+
+
     #mainhead
     {
         left:7%;
@@ -519,6 +527,9 @@ footer {
 
 }
 @media screen and (max-width:395px){
+    
+    
+    
     .menu ul li a 
     {
       padding: 10px 2px;
@@ -553,4 +564,59 @@ footer {
         padding: 15px;
         text-align: left;
     }  
+}
+@media screen and (max-width:376px)
+{
+    .btn2{
+        padding:2px 2px;
+        font-size: 0.9rem;
+        top:10%;
+    }
+    .mango{
+        border:none;
+        box-shadow: none;
+        left:12%;
+        font-size: 1.3rem;
+    }
+    #mainhead{
+        left:3%;
+    }
+    #AboutMe{
+        height: 100%;
+    }
+    #content{
+        height: 700px;
+        padding: 15px;
+    }
+    #image img {
+        width: 50%;
+        height: 80%;
+        border-radius: 100px;
+        float: right;
+        padding: 50px;
+    }
+    .Projectsection{
+        height: 900px;
+    }
+    #contact img{
+        margin-left: 35%;
+    }
+    .btn3{
+        margin: 10px;
+        padding:10px 90px;
+        width: 40%;
+        margin-left: -10px;
+        
+    }
+    #ChangeContent h3{
+        font-size: 1rem;
+        position: absolute;
+        top:60%;
+     }
+     .menu ul li a 
+     {
+       padding: 10px 6px;
+       font-size: 1rem;
+     } 
+     
 }
