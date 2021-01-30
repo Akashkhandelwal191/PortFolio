@@ -449,11 +449,19 @@ footer {
    
     
    
+    #image img {
+        width: 40%;
+        height: 50%;
+        border-radius: 100px;
+        float: right;
+        padding: 60px;
+    }
     #content {
 
         font-size: 1rem;
         padding: 20px;
         text-align: left;
+        height: 700px;
     }  
     .menu ul li a 
     {
@@ -526,29 +534,50 @@ footer {
     }
 
 }
-@media screen and (max-width:395px){
+@media screen and (max-width:450px){
     
     
     
     .menu ul li a 
     {
-      padding: 10px 2px;
+      padding: 10px 7px;
       font-size: 1rem;
     } 
-    
+    #image img {
+        width: 50%;
+        height: 80%;
+        border-radius: 100px;
+        float: right;
+        padding: 50px;
+    }
+    #AboutMe{
+       height: 150%;
+    }
+    #content{
+        height: 800px;
+        padding: 15px;
+    }
     
     .mango{
     
         padding: 30px  35px;
-        left:3%;
+        left:10%;
         width:70%;
+        border: none;
+        box-shadow: none;
         text-align: center;
+        font-size: 1.2rem;
     }
      #ChangeContent h3{
-        font-size: 0.7rem;
+        font-size: 1rem;
         position: absolute;
-        top:60%;
+        top:55%;
      }
+     .btn2{
+        padding:2px 2px;
+        font-size: 1rem;
+        top:10%;
+    }
      .btn2{
          left:2%;
      }
