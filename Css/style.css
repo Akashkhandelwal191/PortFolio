@@ -36,7 +36,7 @@ html {
 .header {
     height: 100vh;
     /* background: rgba(0, 0, 100, 0.5); */
-    background:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../Image/pic4.jpg);
+    background:  linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)),url(../Image/pic4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ html {
     position: absolute;
     top:35%;
     left:4%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color:white;
 }
 
@@ -93,7 +93,7 @@ nav{
     height: 80px;
     width:100vw;
     /* background: #006266; */
-    background: linear-gradient(300deg,blue,#ff3f34,#B53471);
+    background: linear-gradient(300deg,#ff3f34,#B53471);
     /* opacity: 0.9; */
     position: fixed;
     z-index: 1;
@@ -639,6 +639,7 @@ footer {
     
     .logo{
         left:-10%;
+        font-size: 1rem;
     }
     
     #image img {
@@ -740,6 +741,9 @@ footer {
         position: absolute;
         top:60%;
      }
-     
+    .logo{
+        font-size: 10px;
+        left:-13%;
+    }    
      
 }
