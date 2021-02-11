@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     /* new change */
-    box-sizing: border-box;   
+    box-sizing: border-box;  
+    
 }
 
 html {
     scroll-behavior: smooth;
     
     margin:0;
-    
+    overflow-x: hidden;
 }
+
 #loader h1
 {
     display: flex;
@@ -33,30 +35,34 @@ html {
 
 .header {
     height: 100vh;
-    background: rgba(0, 0, 100, 0.5);
+    /* background: rgba(0, 0, 100, 0.5); */
+    background:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../Image/pic4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
 }
 
-.video-background {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    
-}
+
 #mainhead
 {
     color:white;
     position: absolute;
     top:30%;
     left:33%;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
 
+}
+.logo{
+    position: absolute;
+    top:35%;
+    left:4%;
+    font-size: 1.5rem;
+    color:white;
 }
 
 .mango {
@@ -68,9 +74,12 @@ html {
     border: 1px solid white;
     padding: 5px 20px;
     box-shadow: 2px 2px 10px yellow, 4px 2px 5px blue;
+    /* box-shadow: 2px 2px 10px linear-gradient(45deg,red,blue,white),4px 2px 5px linear-gradient(45deg,red,blue,green); */
     transition: all 10s ease-in;
     cursor: pointer;
     height: 20%;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Zilla Slab', serif;
 }
 
 .mango h1:hover {
@@ -80,47 +89,148 @@ html {
 
 }
 
-.menu {
-    background-color: black;
-    width: 100%;
+nav{
     height: 80px;
-    display: flex;
-    align-items: center;
+    width:100vw;
+    /* background: #006266; */
+    background: linear-gradient(300deg,blue,#ff3f34,#B53471);
+    /* opacity: 0.9; */
     position: fixed;
-    top: -10px;
-
-
+    z-index: 1;
 }
 
-.menu ul {
-    display: flex;
-    
+nav ul{
+    float: right;
+    margin-right: 40px;
 }
-
-.menu ul li {
-
-    list-style: none;
+nav li{
+    display: inline-block;
+    margin: 0 8px;
     line-height: 80px;
-
-   
-
 }
-
-.menu ul li a {
-    color: white;
-    
-    padding: 20px 100px;
-    font-size: 1.2rem;
+nav a{
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border:1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
     text-decoration: none;
-    
-    
+    list-style: none;
 }
-.menu ul li a:hover {
+nav li a:hover{
+    border-bottom: 5px solid black;
+    transition:.4ms;
+}
+nav #icon{
+    color:white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:1048px){
+
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+
+    }
+}
+@media (max-width:900px){
+
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: absolute;
+        width:100%;
+        height: 50vh;
+        background: #2f3640;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99999;
+    }
+    nav li{
+        display: block;
+        margin:30px 0;
+        line-height: 30px;
     
-    border-bottom: 5px solid green;
-    
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        border:none;
+        color:#3498db;
+    }
+    nav ul.show{
+        left:0;
+    }
 }
 
+
+.Scrollbtn-main{
+    padding: 5px;
+}
+
+.Scrollbtn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left:50%;
+    top:85%;
+    border: 2px solid white;
+    
+    transform: rotate(45deg);
+    border-top:none;
+    border-left: none;
+    animation: animate 2s linear infinite;
+    opacity: 0;
+}
+.Scrollbtn:nth-child(1){
+    top:84%;
+    animation-delay: 1s;
+    
+}
+.Scrollbtn:nth-child(2)
+{
+   top:86%;
+   animation-delay: 0.90s;
+}
+.Scrollbtn:nth-child(3){
+    top:88%;
+    animation-delay: 2s;
+}
+@keyframes animate{
+    0%{
+        top:84%;
+        opacity: 1;
+    }
+    25%{
+        top:86%;
+        opacity: 1;
+    }
+   75%{
+       top:88%;
+       opacity: 1;
+       
+   }
+   100%{
+       top:88%;
+       opacity: 0;
+   }
+}
 
 #skill2 img
 {
@@ -312,8 +422,22 @@ footer {
     color: white;
     padding: 9px 20px;
     text-align: center;
-    width: 97%;
+    width: 100%;
 }
+
+#backtotop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    color:black;
+    z-index: 9;
+    opacity: 0.6;
+    background-color: #fff;
+}
+
 
 #contact{
     position: relative;
@@ -428,23 +552,6 @@ footer {
 }
 
 
-@media screen and (max-width:1280px)
-{
-    .menu ul li a{
-        padding:15px 65px;
-
-    }
-    .menu ul li{
-        margin-left: 10px;
-    }
-}
-@media screen and (max-width:970px)
-{
-    .menu ul li a{
-        font-size: 1rem;
-        padding: 15px 50px;
-    }
-}
 @media screen and (max-width: 780px) {
    
     
@@ -463,11 +570,7 @@ footer {
         text-align: left;
         height: 700px;
     }  
-    .menu ul li a 
-    {
-      padding: 15px 15px;
-      font-size: 1rem;
-    }
+    
     .mango{
         font-size: 1rem;
         left:25%;
@@ -500,6 +603,7 @@ footer {
     .SocialMedia h1{
         left:25%;
     }
+    
 }
 
 @media screen and (max-width: 460px)
@@ -512,11 +616,7 @@ footer {
         left:7%;
         font-size: 0.9rem;
     }
-    .menu ul li a 
-    {
-      padding: 10px 10px;
-      font-size: 1rem;
-    }
+    
     
     .mango{
         left:8%;
@@ -537,12 +637,10 @@ footer {
 @media screen and (max-width:450px){
     
     
+    .logo{
+        left:-10%;
+    }
     
-    .menu ul li a 
-    {
-      padding: 10px 7px;
-      font-size: 1rem;
-    } 
     #image img {
         width: 50%;
         height: 80%;
@@ -642,10 +740,6 @@ footer {
         position: absolute;
         top:60%;
      }
-     .menu ul li a 
-     {
-       padding: 10px 6px;
-       font-size: 1rem;
-     } 
+     
      
 }
