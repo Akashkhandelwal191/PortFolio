@@ -691,6 +691,9 @@ footer {
         height: 700px;
         padding: 15px;
         text-align: left;
+    }
+    .Projectsection{
+        height: 1000px;
     }  
 }
 @media screen and (max-width:376px)
@@ -724,7 +727,7 @@ footer {
         padding: 50px;
     }
     .Projectsection{
-        height: 900px;
+        height: 1400px;
     }
     #contact img{
         margin-left: 35%;
@@ -745,5 +748,7 @@ footer {
         font-size: 10px;
         left:-13%;
     }    
-     
+    .Projectsub{
+        font-size: 1rem;
+    }    
 }
