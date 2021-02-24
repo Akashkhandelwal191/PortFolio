@@ -12,7 +12,11 @@ html {
     margin:0;
     overflow-x: hidden;
 }
-
+body
+{
+    position: relative;
+    overflow-x: hidden;
+}
 #loader h1
 {
     display: flex;
@@ -35,7 +39,6 @@ html {
 
 .header {
     height: 100vh;
-    /* background: rgba(0, 0, 100, 0.5); */
     background:  linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)),url(../Image/pic4.jpg);
     background-position: center;
     background-size: cover;
@@ -43,19 +46,32 @@ html {
     background-attachment: fixed;
     width: 100vw;
 }
-
+.mainhead-super{
+    position: relative;
+    height: 100%;
+}
 
 #mainhead
 {
     color:white;
     position: absolute;
     top:30%;
-    left:33%;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    left:25%;
+    margin:0 auto;
     text-transform: uppercase;
-    font-size: 1.4rem;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    letter-spacing: 0.3rem;
+    font-weight: bolder;
+    
+    
 
+}
+.mainhead2{
+    position: absolute;
+    top:45%;
+    left:30%;
+    color:#fff;
 }
 .logo{
     position: absolute;
@@ -66,20 +82,20 @@ html {
 }
 
 .mango {
+    
     color: white;
     position: absolute;
-    left: 35%;
-    top: 40%;
+    left: 38%;
+    top: 55%;
     font-size: 2rem;
-    border: 1px solid white;
-    padding: 5px 20px;
-    box-shadow: 2px 2px 10px yellow, 4px 2px 5px blue;
+    
+    padding: 5px 10px;
+    
     /* box-shadow: 2px 2px 10px linear-gradient(45deg,red,blue,white),4px 2px 5px linear-gradient(45deg,red,blue,green); */
     transition: all 10s ease-in;
     cursor: pointer;
     height: 20%;
     /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Zilla Slab', serif;
 }
 
 .mango h1:hover {
@@ -89,107 +105,32 @@ html {
 
 }
 
-nav{
-    height: 80px;
-    width:100vw;
-    /* background: #006266; */
-    background: linear-gradient(300deg,#ff3f34,#B53471);
-    /* opacity: 0.9; */
-    position: fixed;
-    z-index: 1;
+#myNavbar{
+    background: linear-gradient(300deg,#ff3f34,#B53471); 
+    width: 100%;
 }
 
-nav ul{
-    float: right;
-    margin-right: 40px;
-}
-nav li{
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
-}
-nav a{
-    color:white;
-    font-size: 18px;
+.nav-link{
     text-transform: uppercase;
-    border:1px solid transparent;
-    padding: 7px 10px;
-    border-radius: 3px;
-    text-decoration: none;
-    list-style: none;
 }
-nav li a:hover{
-    border-bottom: 5px solid black;
-    transition:.4ms;
-}
-nav #icon{
-    color:white;
-    font-size: 30px;
-    line-height: 80px;
-    float: right;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-@media (max-width:1048px){
 
-    label.logo{
-        font-size: 32px;
-        padding-left: 60px;
-    }
-    nav ul{
-        margin-right: 20px;
-    }
-    nav a{
-        font-size: 17px;
 
-    }
-}
-@media (max-width:900px){
-
-    nav #icon{
-        display: block;
-    }
-    nav ul{
-        position: absolute;
-        width:100%;
-        height: 50vh;
-        background: #2f3640;
-        top:80px;
-        left:-100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 99999;
-    }
-    nav li{
-        display: block;
-        margin:30px 0;
-        line-height: 30px;
-    
-    }
-    nav a{
-        font-size: 20px;
-    }
-    a.active,a:hover{
-        border:none;
-        color:#3498db;
-    }
-    nav ul.show{
-        left:0;
-    }
-}
 
 
 .Scrollbtn-main{
     padding: 5px;
+    /* margin:auto; */
+    
+    width:10%;
 }
 
 .Scrollbtn{
+    margin:auto;
     position: absolute;
     height: 50px;
     width: 50px;
+    top:50%;
     left:50%;
-    top:85%;
     border: 2px solid white;
     
     transform: rotate(45deg);
@@ -231,6 +172,54 @@ nav #icon{
        opacity: 0;
    }
 }
+/* Skills Section Css */
+.container {
+
+    width: 100%;
+    /* background-color: blue; */
+    /* padding:10px 20px; */
+    margin: 0px auto;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.box {
+    padding: 10px 10px;
+
+}
+
+.lined {
+    font-weight: bolder;
+    letter-spacing: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.lined-bottom {
+    margin: 0 auto;
+    border-bottom: 2px solid #2e86de;
+    width: 20%;
+
+
+}
+.lined2{
+    width: 15%;
+}
+
+.ml15{
+    margin-left: auto;
+}
+
+.ptag{
+    font-weight: bolder;
+}
+
+
+
+
+
+
 
 #skill2 img
 {
@@ -374,16 +363,20 @@ h3 {
     background-color: whitesmoke;
     /* border: 2px solid black; */
     height: 90%;
+    background-attachment: fixed;
 }
 
 #content {
-    height: 400px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 800px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size: 1.5rem;
     padding: 25px;
     text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
 
 }
+
 
 #image img {
     width: 10%;
@@ -407,12 +400,13 @@ h3 {
     background: url(../Image/image3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 800px;
 }
 
 .Projectsection h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 2rem;
     padding: 15px 0px;
 }
@@ -441,6 +435,7 @@ footer {
 
 #contact{
     position: relative;
+    color:#fff;
 }
 #contact::before{
     content: "";
@@ -449,7 +444,11 @@ footer {
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url('../Image/contact.jpg') no-repeat center center/cover;
+    background:linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)),url(../Image/contact4.jpg);
+    background-attachment: fixed;
+    /* background: url('../Image/contact4.jpg') no-repeat center center/cover; */
+    /* background: #474789; */
+    
 
 }
 #contact-box{
@@ -461,10 +460,13 @@ footer {
 
 #contact-box input, 
 #contact-box textarea{
+    outline: none;
+    border: none;
     width: 100%;
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
+    box-shadow: 2rem 1rem 2rem -0.7rem rgba(0,0,0,0.4),rgba(255,255,255,1);
 } 
 
 #contact-box form{
@@ -489,13 +491,11 @@ footer {
     margin-left: 120px;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color:white;
-    background-color:blue;
-    border: 1px solid blue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all 1s ease-in-out;
     width: 60%;
+    text-align: center;
 }
 .btn3:hover
 {
@@ -554,7 +554,12 @@ footer {
 
 @media screen and (max-width: 780px) {
    
-    
+    .mainhead2{
+        position: absolute;
+        top:45%;
+        left:20%;
+        color:#fff;
+    }
    
     #image img {
         width: 40%;
@@ -603,18 +608,23 @@ footer {
     .SocialMedia h1{
         left:25%;
     }
-    
+    .Projectsection{
+        height: 1200px;
+    }  
+
 }
 
-@media screen and (max-width: 460px)
+@media screen and (max-width: 480px)
 {
 
-
+    .mainhead2{
+        left:8%;
+    }
 
     #mainhead
     {
         left:7%;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     
     
@@ -632,6 +642,9 @@ footer {
         top:70%;
         left:12%;
     }
+    .Projectsection{
+        height: 1200px;
+    }  
 
 }
 @media screen and (max-width:450px){
@@ -652,10 +665,7 @@ footer {
     #AboutMe{
        height: 150%;
     }
-    #content{
-        height: 800px;
-        padding: 15px;
-    }
+    
     
     .mango{
     
@@ -673,7 +683,7 @@ footer {
         top:55%;
      }
      .btn2{
-        padding:2px 2px;
+        padding:7px 4px;
         font-size: 1rem;
         top:10%;
     }
@@ -688,7 +698,7 @@ footer {
     }
     #content {
 
-        height: 700px;
+        height: 1100px;
         padding: 15px;
         text-align: left;
     }
@@ -699,7 +709,7 @@ footer {
 @media screen and (max-width:376px)
 {
     .btn2{
-        padding:2px 2px;
+        padding:10px 5px;
         font-size: 0.9rem;
         top:10%;
     }
@@ -707,16 +717,20 @@ footer {
         border:none;
         box-shadow: none;
         left:12%;
-        font-size: 1.3rem;
     }
+    
     #mainhead{
         left:3%;
     }
+    .mainhead2{
+        left:2%;
+    }
+
     #AboutMe{
         height: 100%;
     }
     #content{
-        height: 700px;
+        height: 1100px;
         padding: 15px;
     }
     #image img {
@@ -727,17 +741,16 @@ footer {
         padding: 50px;
     }
     .Projectsection{
-        height: 1400px;
+        height: 1800px;
     }
     #contact img{
         margin-left: 35%;
     }
     .btn3{
         margin: 10px;
-        padding:10px 90px;
-        width: 40%;
-        margin-left: -10px;
-        
+        padding:10px 30px;
+        width: 100%;
+        font-size: 1rem;      
     }
     #ChangeContent h3{
         font-size: 1rem;
@@ -750,5 +763,30 @@ footer {
     }    
     .Projectsub{
         font-size: 1rem;
-    }    
+        padding:5px 10px;
+    }  
+    
+    
+    #contact-box{
+        justify-content: flex-start;
+        margin-left:10px;
+    }
+
+    #contact-box input, 
+    #contact-box textarea{
+    width: 300px;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+   } 
+}
+
+@media screen and (max-width:350px){
+    .mango{
+        left:12%;
+        padding:10px 10px;
+    }
+    .btn2{
+        top:40%;
+    }
 }
