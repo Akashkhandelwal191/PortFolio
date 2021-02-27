@@ -550,6 +550,13 @@ footer {
     text-shadow: 2px 2px 10px white;
     letter-spacing: 1px;
 }
+.percentage{
+    opacity: 0;
+}
+.percentage:hover{
+    cursor: pointer;
+    opacity: 1;
+}
 
 
 @media screen and (max-width: 780px) {
