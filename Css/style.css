@@ -59,8 +59,6 @@ body
     left:25%;
     margin:0 auto;
     text-transform: uppercase;
-    /* font-family: 'Josefin Sans', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
     letter-spacing: 0.3rem;
     font-weight: bolder;
     
@@ -91,16 +89,15 @@ body
     
     padding: 5px 10px;
     
-    /* box-shadow: 2px 2px 10px linear-gradient(45deg,red,blue,white),4px 2px 5px linear-gradient(45deg,red,blue,green); */
+    
     transition: all 10s ease-in;
     cursor: pointer;
     height: 20%;
-    /* font-family: 'Poppins', sans-serif; */
+    
 }
 
 .mango h1:hover {
     transform: scale(1.1);
-    /* background-color: white; */
     color: black;
 
 }
@@ -118,9 +115,7 @@ body
 
 
 .Scrollbtn-main{
-    padding: 5px;
-    /* margin:auto; */
-    
+    padding: 5px;   
     width:10%;
 }
 
@@ -292,8 +287,7 @@ body
 .btn2:hover::before
 {  
     filter: blur(3px);
-    /* transform: scale(1.2); */
-    /* box-shadow: 0 0 15px #d35400; */
+   
 }
 .btn2:hover {
     /* background-color: blue; */
@@ -430,7 +424,9 @@ footer {
     z-index: 9;
     opacity: 0.6;
     background-color: #fff;
+    display: none;
 }
+
 
 
 #contact{
@@ -446,8 +442,7 @@ footer {
     opacity: 0.7;
     background:linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)),url(../Image/contact4.jpg);
     background-attachment: fixed;
-    /* background: url('../Image/contact4.jpg') no-repeat center center/cover; */
-    /* background: #474789; */
+   
     
 
 }
@@ -460,6 +455,8 @@ footer {
 
 #contact-box input, 
 #contact-box textarea{
+    caret-color: #ff3f34;
+    margin:2px;
     outline: none;
     border: none;
     width: 100%;
@@ -469,12 +466,21 @@ footer {
     box-shadow: 2rem 1rem 2rem -0.7rem rgba(0,0,0,0.4),rgba(255,255,255,1);
 } 
 
+#contact-box input:focus{
+    box-shadow: 0 0 20px 10px red;
+}
+#contact-box textarea:focus{
+ 
+     box-shadow: 0 0 20px 10px red;
+
+}
+
 #contact-box form{
     width: 40%;
 }
 
 #contact-box label{
-   font-size: 1.3rem;
+   font-size: 1.7rem;
    font-family: 'Bree Serif', serif;
 
 }
@@ -485,17 +491,31 @@ footer {
     text-align: center;
     padding: 15px;
 }
+#contact #contact-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact #contact-head img{
+    border-radius: 50%;
+    width:100px;
+}
+
+
 .btn3
 {
-    margin: 13px;
-    margin-left: 120px;
+    
+    margin:10px auto;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 0.9rem;
     color:white;
     transition: all 1s ease-in-out;
-    width: 60%;
+    width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 .btn3:hover
 {
@@ -524,16 +544,7 @@ footer {
     position: absolute;
     left:40%;
 }
-#contact img
-{
-    border-radius: 145px;
-    /* position: absolute; */
-    width:100px;
-    margin-left:45.5%;
-    
 
-    
-}
 .Projectsection{
     padding:0px 40px;
     
@@ -603,10 +614,7 @@ footer {
     {
         font-size: 0.7rem;
     }
-    .btn3
-    {
-        margin-left: 50px;
-    }
+   
     #mainhead
     {
         left:17%;
@@ -653,6 +661,13 @@ footer {
         height: 1200px;
     }  
 
+
+    .h-unique{
+      font-size: 1.2rem;
+    }
+    #contact-box form{
+        width: 80%;
+    }
 }
 @media screen and (max-width:450px){
     
@@ -750,9 +765,7 @@ footer {
     .Projectsection{
         height: 1800px;
     }
-    #contact img{
-        margin-left: 35%;
-    }
+   
     .btn3{
         margin: 10px;
         padding:10px 30px;
@@ -774,18 +787,7 @@ footer {
     }  
     
     
-    #contact-box{
-        justify-content: flex-start;
-        margin-left:10px;
-    }
-
-    #contact-box input, 
-    #contact-box textarea{
-    width: 300px;
-    padding: 0.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
-   } 
+   
 }
 
 @media screen and (max-width:350px){
