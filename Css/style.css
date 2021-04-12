@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +36,73 @@ body
     background:#fff url("https://i.pinimg.com/originals/ca/89/fb/ca89fbce5e5c68f46d5330946c58ddc6.gif") no-repeat center;
     background-size: cover;
     z-index: 99999;
+}
+
+#cookies{
+
+     max-height:400px;
+     max-width:600px;
+     /* border: 2px solid white; */
+     border-radius: 20px;
+     background-color: black;
+     color:#fff;
+     padding: 25px;
+     position: fixed;
+     left: 50%;
+     top:50%;
+     transform: translate(-50%,-50%);
+     opacity: 0.8;
+     z-index: 22222;
+     font-size: 1.5rem;
+     font-family: 'Quicksand', sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-shadow: 0 0 20px 10px rgba(255,255,255,0.7);
+     display: none;     
+     
+
+}
+
+#cookies h4{
+    font-size: 2em;
+    opacity: 1;
+    text-transform: uppercase;
+    
+  
+}
+
+#cookies span{
+    display: inline-block;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+#cookies p{
+
+    font-size: 1.5em;
+    text-transform: capitalize;
+    word-spacing: 0.3rem;
+    text-align: center;
+    
+}
+
+#cookies .cookbtn{
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #d63031;
+    color: #ffffff;
+    margin: 2px;
+}
+#cookies .cookbtn:hover{
+    background-color: #ff7675;
+}
+.main-body{
+    filter: blur(5px);
+    
 }
 
 .header {
@@ -578,6 +646,11 @@ footer {
         left:20%;
         color:#fff;
     }
+
+   #cookies{
+       height: 60%;
+       width: 80%;
+   }
    
     #image img {
         width: 40%;
@@ -675,6 +748,23 @@ footer {
     .logo{
         left:-10%;
         font-size: 1rem;
+    }
+    #cookies{
+        height: 55%;
+        width: 75%;
+    }
+    #cookies h4{
+        font-size: 2rem;
+    }
+
+
+    #cookies p{
+        font-size: 1.7rem;
+    }
+
+    #cookies .cookbtn{
+        font-size: 1.3rem;
+        padding: 8px;
     }
     
     #image img {
