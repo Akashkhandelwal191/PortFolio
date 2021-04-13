@@ -475,7 +475,7 @@ h3 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 800px;
+    height: 1100px;
 }
 
 .Projectsection h1 {
@@ -709,7 +709,7 @@ footer {
         left:25%;
     }
     .Projectsection{
-        height: 1200px;
+        height: 1400px;
     }  
 
 }
@@ -743,7 +743,7 @@ footer {
         left:12%;
     }
     .Projectsection{
-        height: 1200px;
+        height: 1700px;
     }  
 
 
@@ -826,9 +826,7 @@ footer {
         padding: 15px;
         text-align: left;
     }
-    .Projectsection{
-        height: 1400px;
-    }  
+   
 }
 @media screen and (max-width:376px)
 {
@@ -864,9 +862,7 @@ footer {
         float: right;
         padding: 50px;
     }
-    .Projectsection{
-        height: 1800px;
-    }
+  
    
     .btn3{
         margin: 10px;
@@ -900,4 +896,7 @@ footer {
     .btn2{
         top:40%;
     }
+    .Projectsection{
+        height: 1900px;
+    }  
 }
