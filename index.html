@@ -58,9 +58,11 @@
 
     <div id="cookies">
     <h4>Cookies</h4>
+    <div id="fr"> <i class="fas fa-times" ></i>  </div>
     <span></span>
     <p>We Use Cookies For better User Experience.</p>
     <div class="cookbuttons">
+   
     <button type="button" class="cookbtn">Accept</button>
     <button type="button" class="cookbtn">No,Thanks</button>
     </div>
@@ -119,15 +121,15 @@
                 <h1>Connect With Me</h1>
                 <iframe src="SocailMedia.html" frameborder="0" width="100%"></iframe>
             </div>
-            <div class="container">
-                <div class="Scrollbtn-main">
+          
+                
                     <a href="#AboutMe">
                         <div class="Scrollbtn"> </div>
                         <div class="Scrollbtn"> </div>
                         <div class="Scrollbtn"> </div>
                     </a>
-                </div>
-            </div>
+                
+            
 
         </div>
 
@@ -743,6 +745,13 @@
                 $("#blur").removeClass('main-body');
                 $("#cookies").css("display","none");
             })
+
+            $('#fr').click(function(){
+                $("#blur").removeClass('main-body');
+                $("#cookies").css("display","none");
+            })
+
+         
   
          });
 

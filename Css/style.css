@@ -66,7 +66,7 @@ body
 }
 
 #cookies h4{
-    font-size: 2em;
+    font-size: 1.6em;
     opacity: 1;
     text-transform: uppercase;
     
@@ -80,10 +80,17 @@ body
 }
 #cookies p{
 
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: capitalize;
     word-spacing: 0.3rem;
     text-align: center;
+    
+}
+#cookies #fr{
+    position: absolute;
+    top:4px;
+    right:10px;
+    cursor: pointer;
     
 }
 
@@ -180,20 +187,16 @@ body
 }
 
 
-
-
-.Scrollbtn-main{
-    padding: 5px;   
-    width:10%;
-}
+   
 
 .Scrollbtn{
-    margin:auto;
+    
     position: absolute;
     height: 50px;
     width: 50px;
     top:50%;
     left:50%;
+    transform: translate(-50%,-50%);
     border: 2px solid white;
     
     transform: rotate(45deg);
@@ -243,6 +246,7 @@ body
     /* padding:10px 20px; */
     margin: 0px auto;
     font-family: 'Josefin Sans', sans-serif;
+   
 
 }
 
