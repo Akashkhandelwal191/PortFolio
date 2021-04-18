@@ -17,10 +17,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             height: 100vh;
             text-align: center;
             overflow: hidden;
             /* background: #262626; */
+        }
+        h2{
+            color:#ffffff;
+            font-size: 3rem;
+            font-family: 'Jost', sans-serif;
+            letter-spacing: 0.2rem;
+            font-weight: bolder;
         }
         ul
         {
@@ -31,11 +39,11 @@
             position: relative;
             display: block;
             color:#666;
-            font-size: 30px;
-            height: 60px;
-            width: 60px;
+            font-size: 50px;
+            height: 70px;
+            width: 70px;
             /* background: #171515; */
-            line-height: 60px;
+            line-height: 70px;
             border-radius: 50%;
             margin: 0 15px;
             cursor: pointer;
@@ -91,6 +99,13 @@
            box-shadow: 0 0 15px #d35400;
            text-shadow: 0 0 15px #d35400;
        }
+
+       @media screen and (max-width:900px)
+       {
+           h2{
+               font-size: 2rem;
+           }
+       }
        @media screen  and (max-width: 470px){
            ul li{
             margin: 0 0;
@@ -98,6 +113,9 @@
            }
        }
        @media screen  and (max-width: 400px){
+           h2{
+               font-size: 1.8rem;
+           }
            ul li{
             margin: 0 0;
             border-radius: 12%;
@@ -120,6 +138,7 @@
     
         
     
+    <h2>Connect With Me</h2>
     <ul>
 
         <li><a href="https://m.facebook.com/akash.khandelwal.1042?ref=bookmarks" target="newtab"><i class="fab fa-facebook-f"></i></a></li>

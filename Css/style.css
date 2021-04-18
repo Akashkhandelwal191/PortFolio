@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
-    /* new change */
-    box-sizing: border-box;  
-    
+    box-sizing: border-box;     
 }
 
 html {
     scroll-behavior: smooth;
-    
     margin:0;
     overflow-x: hidden;
 }
@@ -54,7 +52,6 @@ body
      left: 50%;
      top:50%;
      transform: translate(-50%,-50%);
-     opacity: 0.8;
      z-index: 22222;
      font-size: 1.5rem;
      font-family: 'Quicksand', sans-serif;
@@ -122,60 +119,55 @@ body
 
 .header {
     height: 100vh;
-    background:  linear-gradient(rgba(0,0,0,0.61),rgba(0,0,0,0.61)),url(../Image/pic4.jpg);
+    background:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../Image/pic4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100vw;
+    
 }
 .mainhead-super{
-    position: relative;
     height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;   
 }
 
 #mainhead
 {
     color:white;
-    position: absolute;
-    top:30%;
-    left:25%;
-    margin:0 auto;
+    margin-top: 150px;
+    margin-bottom:20px;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-weight: bolder;
-    
-    
 
 }
-.mainhead2{
-    position: absolute;
-    top:45%;
-    left:30%;
-    color:#fff;
+
+#mainhead h1{
+    font-size: 4rem;
 }
-.logo{
-    position: absolute;
-    top:35%;
-    left:4%;
-    font-size: 1.4rem;
-    color:white;
+.mainhead2{
+    color:#fff;
+    margin:20px auto;
+}
+
+.SocialMedia{
+    width: 100%;
+    text-align: center;
+   
 }
 
 .mango {
     
     color: white;
-    position: absolute;
-    left: 38%;
-    top: 55%;
+    margin:20px auto;
     font-size: 2rem;
-    
     padding: 5px 10px;
-    
-    
     transition: all 10s ease-in;
     cursor: pointer;
-    height: 20%;
     
 }
 
@@ -194,19 +186,23 @@ body
     text-transform: uppercase;
 }
 
-
+.Scrollbtn-main{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    margin:0px auto;
+    margin-top: -20px;
+}
    
 
-.Scrollbtn{
+.Scrollbtn-main .Scrollbtn{
     
     position: absolute;
-    height: 50px;
-    width: 50px;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    border: 2px solid white;
-    
+    height: 60px;
+    width: 60px;
+    top:20%;
+    left:27%;
+    border: 2px solid white; 
     transform: rotate(45deg);
     border-top:none;
     border-left: none;
@@ -214,35 +210,35 @@ body
     opacity: 0;
 }
 .Scrollbtn:nth-child(1){
-    top:84%;
+    top:20%;
     animation-delay: 1s;
     
 }
 .Scrollbtn:nth-child(2)
 {
-   top:86%;
+   top:28%;
    animation-delay: 0.90s;
 }
 .Scrollbtn:nth-child(3){
-    top:88%;
+    top:36%;
     animation-delay: 2s;
 }
 @keyframes animate{
     0%{
-        top:84%;
+        top:20%;
         opacity: 1;
     }
     25%{
-        top:86%;
+        top:26%;
         opacity: 1;
     }
    75%{
-       top:88%;
+       top:28%;
        opacity: 1;
        
    }
    100%{
-       top:88%;
+       top:36%;
        opacity: 0;
    }
 }
@@ -250,8 +246,6 @@ body
 .container {
 
     width: 100%;
-    /* background-color: blue; */
-    /* padding:10px 20px; */
     margin: 0px auto;
     font-family: 'Josefin Sans', sans-serif;
    
@@ -343,8 +337,8 @@ body
     transition: 0.6s ease-in-out;
     text-transform: uppercase;
     background-color:white;
-    position: absolute;
-    left: 22%;
+    /* position: absolute; */
+    /* left: 22%; */
     font-size: 1.2rem;
     text-shadow: 2px 2px 15px white;
     position: relative;
@@ -601,22 +595,7 @@ footer {
 {
     background-color: green;
 }
-.SocialMedia iframe
-{
-    position: absolute;
-    /* left:4%; */
-    top:65%;
-    
 
-}
-.SocialMedia h1
-{
-    position: absolute;
-    color:white;
-    left:42%;
-    top:65%;
-    font-size: 2rem;
-}
 #my-form-status
 {
     color:black;
@@ -652,12 +631,14 @@ footer {
 
 @media screen and (max-width: 780px) {
    
-    .mainhead2{
-        position: absolute;
-        top:45%;
-        left:20%;
-        color:#fff;
-    }
+
+   #mainhead{
+       margin-top: 100px;
+       margin-bottom: 10px;
+   } 
+   #mainhead h1{
+       font-size:3rem;
+   } 
 
    #cookies{
        height: 60%;
@@ -679,35 +660,20 @@ footer {
         height: 700px;
     }  
     
-    .mango{
-        font-size: 1rem;
-        left:25%;
-    }
+
     h3
     {
         font-size: 1rem;
         left:50%;
     }
-    .btn2
-    {
-        font-size: 1rem;
-        left:9%;
-        top:30%;
-    }
+    
     
     .btn
     {
         font-size: 0.7rem;
     }
    
-    #mainhead
-    {
-        left:17%;
-        font-size: 1rem;
-    }
-    .SocialMedia h1{
-        left:25%;
-    }
+    
     .Projectsection{
         height: 1400px;
     }  
@@ -717,31 +683,7 @@ footer {
 @media screen and (max-width: 480px)
 {
 
-    .mainhead2{
-        left:8%;
-    }
-
-    #mainhead
-    {
-        left:7%;
-        font-size: 1rem;
-    }
     
-    
-    .mango{
-        left:8%;
-        font-size: 0.8rem;
-        padding: 20px  30px;
-        width:60%;
-    }
-    .SocialMedia iframe
-    {
-        top:70%;
-    }
-    .SocialMedia h1{
-        top:70%;
-        left:12%;
-    }
     .Projectsection{
         height: 1700px;
     }  
@@ -757,6 +699,14 @@ footer {
 @media screen and (max-width:450px){
     
     
+    #mainhead{
+        margin-top: 80px;
+    }
+
+    #mainhead h1{
+        font-size: 2.5rem;
+    }
+
     .logo{
         left:-10%;
         font-size: 1rem;
@@ -791,35 +741,13 @@ footer {
     }
     
     
-    .mango{
     
-        padding: 30px  35px;
-        left:10%;
-        width:70%;
-        border: none;
-        box-shadow: none;
-        text-align: center;
-        font-size: 1.2rem;
-    }
      #ChangeContent h3{
         font-size: 1rem;
         position: absolute;
         top:55%;
      }
-     .btn2{
-        padding:7px 4px;
-        font-size: 1rem;
-        top:10%;
-    }
-     .btn2{
-         left:2%;
-     }
-     .btn2:hover::before
-    {  
-    /* filter: blur(3px); */
-      transform: scale(1);
-    
-    }
+     
     #content {
 
         height: 1100px;
@@ -830,22 +758,14 @@ footer {
 }
 @media screen and (max-width:376px)
 {
-    .btn2{
-        padding:10px 5px;
-        font-size: 0.9rem;
-        top:10%;
-    }
-    .mango{
-        border:none;
-        box-shadow: none;
-        left:12%;
-    }
     
+
     #mainhead{
-        left:3%;
+        margin-top: 70px;
     }
-    .mainhead2{
-        left:2%;
+
+    #mainhead h1{
+        font-size: 2.2rem;
     }
 
     #AboutMe{
@@ -889,13 +809,7 @@ footer {
 }
 
 @media screen and (max-width:350px){
-    .mango{
-        left:12%;
-        padding:10px 10px;
-    }
-    .btn2{
-        top:40%;
-    }
+    
     .Projectsection{
         height: 1900px;
     }  
