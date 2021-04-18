@@ -770,7 +770,11 @@
                         for (var i = 0; i < a.length; i++) {
                             a[i].classList.add('animation');
                         }
-                
+
+                        setTimeout(() => {
+                            $(".percentage").css("opacity","1");
+                        },2000);
+                       
 
                 }
 
@@ -780,6 +784,7 @@
                     for (var i = 0; i < a.length; i++) {
                         a[i].classList.remove('animation');
                     }
+                    $(".percentage").css("opacity","0");
 
                 }
 
