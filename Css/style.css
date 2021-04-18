@@ -287,8 +287,14 @@ body
 
 
 
-
-
+.animation{
+    animation:move 2s ease-in-out forwards;
+}
+@keyframes move {
+    from{
+        width:0%;
+    }
+}
 
 #skill2 img
 {
