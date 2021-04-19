@@ -9,7 +9,7 @@
     <title>Akash Khandelwal</title>
     <link rel="icon" href="Image/Fav2.jpg">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -628,7 +628,7 @@
         <section id="Project">
             <div class="Projectsection">
                 <h1><b>Projects</b></h1>
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-left">
                     <p>I made a responsive Food delivery site containing Four section Home,Services,AboutUs and Contact
                         us
                         Menu-Category Page and Single
@@ -638,14 +638,14 @@
                                 Project:1</a></span></p>
                 </div>
 
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-right">
                     <p>I have made a responsive Cafe Site Using HTML5,CSS3 and Javascript With Parallax Scrolling
                         behavior. Used jquery and a little bit of Bootstrap.It has Various Section Home,
                         Gallery,Services,About Us and Contact Us <span class="badge bg-dark"><a class="text-warning"
                                 href="https://akashkhandelwal191.github.io/CafeSite/" target="newtab">Click to see My
                                 Project:2</a></span></p>
                 </div>
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-left">
                     <p>Made Virtual Desktop Assistant using Python and Used lot of library for make this Assistant
                         Convenient named "Alexa"(Wolfram Alpha,Open WeatherAPI,NewsAPI,Speech
                         Recognition,etc.)<span class="badge bg-dark"><a class="text-warning"
@@ -657,7 +657,7 @@
                 </div>
 
 
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-right">
                     <p>I have made a responsive Interview Based Quiz Website Using HTML5,CSS3 And Pure Javascript. Added
                         lot
                         of topic
@@ -669,7 +669,7 @@
                 </div>
 
 
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-left">
                     <p>I have made a responsive Keep Notes Web based Application Using HTML5,CSS3,Javascript And
                         Bootstrap5.Using Concept
                         of local and Session Storage.<span class="badge bg-dark"><a class="text-warning"
@@ -679,7 +679,7 @@
                 </div>
 
 
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-right">
                     <p>I have made a responsive Music Player Using HTML5,CSS3,Javascript And Bootstrap5.<span
                             class="badge bg-dark"><a class="text-warning"
                                 href="https://akashkhandelwal191.github.io/MusicPlayer/" target="newtab">Click to see My
@@ -687,7 +687,7 @@
                     </p>
                 </div>
 
-                <div class="Projectsub">
+                <div class="Projectsub" data-aos="fade-left">
                     <p>Made a personalised website showing what skills I have learned so far and some of my Projects
                         that
                         done yet.You
@@ -755,7 +755,13 @@
         crossorigin="anonymous"></script>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1100,
+        });
+    </script>
 
 
     <script>
@@ -765,16 +771,16 @@
             window.addEventListener("scroll", function () {
 
                 if (document.documentElement.scrollTop > 200) {
-                
-                        var a = document.querySelectorAll('.progress-bar');
-                        for (var i = 0; i < a.length; i++) {
-                            a[i].classList.add('animation');
-                        }
 
-                        setTimeout(() => {
-                            $(".percentage").css("opacity","1");
-                        },2000);
-                       
+                    var a = document.querySelectorAll('.progress-bar');
+                    for (var i = 0; i < a.length; i++) {
+                        a[i].classList.add('animation');
+                    }
+
+                    setTimeout(() => {
+                        $(".percentage").css("opacity", "1");
+                    }, 2000);
+
 
                 }
 
@@ -784,7 +790,7 @@
                     for (var i = 0; i < a.length; i++) {
                         a[i].classList.remove('animation');
                     }
-                    $(".percentage").css("opacity","0");
+                    $(".percentage").css("opacity", "0");
 
                 }
 
