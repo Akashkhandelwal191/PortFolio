@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Akash Khandelwal</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="Image/Fav2.jpg">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -19,11 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@100&display=swap"
         rel="stylesheet">
 
+    <!-- Custom Css     -->
     <link rel="stylesheet" href="Css/style.css">
+
+    <!-- WebFonts Css -->
     <link rel="stylesheet" href="Css/all.css">
 
+    <!-- Jquery -->
     <script src="Js/jquery-3.6.0.min.js"></script>
-    
+
 
     <script>
         $(document).ready(function () {
@@ -55,6 +61,7 @@
     <i id="backtotop" class="fas fa-arrow-circle-up hide"></i>
     <!-- Scroll bottom to top End -->
 
+    <!-- Cookies Popup Section Start -->
     <div id="cookies">
         <h4>Cookies</h4>
         <div id="fr"> <i class="fas fa-times"></i> </div>
@@ -66,6 +73,8 @@
             <button type="button" class="cookbtn">No,Thanks</button>
         </div>
     </div>
+    <!-- Cookies Popup Section End -->
+
 
 
     <div id="blur">
@@ -90,6 +99,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#Project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Blogs">Blogs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -698,6 +710,19 @@
         </section>
         <!-- Project Section End  -->
 
+
+        <!-- Blogs Section Start -->
+        <section id="Blogs">
+
+
+
+
+
+
+
+        </section>
+        <!-- Blogs Section End -->
+
         <!-- Contact Section Start -->
         <section id="contact">
             <div id="contact-head">
@@ -761,199 +786,7 @@
             duration: 1100,
         });
     </script>
-
-
-    <script>
-
-        $('.moveanimation').ready(function () {
-
-            window.addEventListener("scroll", function () {
-
-                if (document.documentElement.scrollTop > 200) {
-
-                    var a = document.querySelectorAll('.progress-bar');
-                    for (var i = 0; i < a.length; i++) {
-                        a[i].classList.add('animation');
-                    }
-
-                    setTimeout(() => {
-                        $(".percentage").css("opacity", "1");
-                    }, 2000);
-
-
-                }
-
-                else {
-
-                    var a = document.querySelectorAll('.progress-bar');
-                    for (var i = 0; i < a.length; i++) {
-                        a[i].classList.remove('animation');
-                    }
-                    $(".percentage").css("opacity", "0");
-
-                }
-
-
-
-
-
-
-            })
-
-
-
-        })
-
-
-    </script>
-
-    <script>
-
-        $(document).ready(function () {
-
-            setTimeout(() => {
-                $("#blur").addClass('main-body');
-                $("#cookies").css("display", "flex");
-
-            }, 12000);
-
-
-            $('.cookbtn').click(function () {
-                $("#blur").removeClass('main-body');
-                $("#cookies").css("display", "none");
-            })
-
-            $('#fr').click(function () {
-                $("#blur").removeClass('main-body');
-                $("#cookies").css("display", "none");
-            })
-
-
-
-        });
-
-    </script>
-
-
-    <script>
-        var Preloader = document.getElementById("loader");
-        function myFunction() {
-
-            Preloader.style.display = "none";
-
-        }
-
-        function slideshow() {
-
-            var x = document.getElementById('check-class');
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-
-        }
-
-    </script>
-
-    <script>
-
-
-        var typed = new Typed('.type', {
-
-            strings: ['My Name is Akash Khandelwal.', 'I am a Software Developer.', 'I am a Programming Enthusiastic.', 'I am a Web Developer.', 'I   am   a   Youtuber.'],
-            typeSpeed: 100,
-            backSpeed: 70,
-            loop: true,
-
-        });
-
-    </script>
-
-    <script>
-        window.addEventListener("DOMContentLoaded", function () {
-
-            // get the form elements defined in your form HTML above
-
-            var form = document.getElementById("my-form");
-            var button = document.getElementById("my-form-button");
-            var status = document.getElementById("my-form-status");
-
-            // Success and Error functions for after the form is submitted
-
-            function success() {
-                form.reset();
-
-                // status.innerHTML = "Thanks!";
-                window.alert("Thanks!Your Response has been Recorded");
-            }
-
-            function error() {
-                form.reset();
-
-                window.alert("Oops! There was a problem.");
-
-            }
-
-            // handle the form submission event
-
-            form.addEventListener("submit", function (ev) {
-                ev.preventDefault();
-                var data = new FormData(form);
-                ajax(form.method, form.action, data, success, error);
-            });
-        });
-
-        // helper function for sending an AJAX request
-
-        function ajax(method, url, data, success, error) {
-            var xhr = new XMLHttpRequest();
-            xhr.open(method, url);
-            xhr.setRequestHeader("Accept", "application/json");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState !== XMLHttpRequest.DONE) return;
-                if (xhr.status === 200) {
-                    success(xhr.response, xhr.responseType);
-                } else {
-                    error(xhr.status, xhr.response, xhr.responseType);
-
-                }
-            };
-            xhr.send(data);
-        }
-    </script>
-
-
-    <script>
-
-
-        window.addEventListener('scroll', function () {
-
-            if (document.documentElement.scrollTop > 181) {
-
-                document.getElementById('backtotop').style.display = "block";
-            }
-
-            else {
-                document.getElementById('backtotop').style.display = "none";
-            }
-
-
-        })
-
-
-        const topscroll = document.querySelector("#backtotop");
-        topscroll.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-
-            });
-        });
-
-
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
