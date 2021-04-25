@@ -922,6 +922,11 @@ footer {
         padding: 15px;
         text-align: left;
     }
+      
+    .Projectsection{
+        height: 2400px;
+    }  
+
    
 }
 @media screen and (max-width:376px)
@@ -979,3 +984,9 @@ footer {
    
 }
 
+@media screen and (max-width:340px)
+{
+    .Projectsection{
+        height: 2800px;
+    }
+}
