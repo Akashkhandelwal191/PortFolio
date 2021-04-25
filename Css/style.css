@@ -783,7 +783,44 @@ footer {
     text-align: center;
     width: 100%;
 }
+footer h5{
 
+    text-align: left;
+    margin-bottom: 20px;
+}
+footer .footerlinks{
+    display: block;
+    text-align: left;
+    color: rgba(255,255,255,0.5);
+    margin:5px;
+}
+
+footer .footerlinks a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+  
+}
+footer .footerlinks a:hover{
+    color:#d63031;
+}
+
+footer .footer-contact{
+    text-align: left;
+    margin: 10px;
+    display: flex;
+    margin-left: auto;
+}
+footer .footer-contact span a{
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+}
+footer .footer-contact span a:hover{
+
+    color:#d63031;
+}
+footer .footer-contact span:last-child{
+    color:rgba(255,255,255,0.5);
+}
 
 @media screen and (max-width: 780px) {
    
@@ -838,7 +875,7 @@ footer {
 
 @media screen and (max-width:580px) {
     .Projectsection{
-        height: 1900px;
+        height: 1950px;
     }
 }
 
