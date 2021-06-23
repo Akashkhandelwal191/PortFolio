@@ -474,7 +474,7 @@ h3 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 1500px;
+    height: 2200px;
     padding:0px 40px;
 }
 
@@ -493,7 +493,7 @@ h3 {
     /* padding:15px 20px; */
     /* border:2px solid rgba(14, 105, 180, 0.877); */
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 30px auto;
     /* text-shadow: 2px 2px 10px white; */
     letter-spacing: 1px;
 }
@@ -804,6 +804,17 @@ footer .footerlinks a:hover{
     color:#d63031;
 }
 
+footer .footer-socialcontact{
+    text-align: left;
+    margin: 10px;
+    display: flex;
+    margin-left: auto;
+}
+footer .footer-socialcontact img{
+    height: 30px;
+    width: 30px;
+}
+
 footer .footer-contact{
     text-align: left;
     margin: 10px;
@@ -866,16 +877,16 @@ footer .footer-contact span:last-child{
         font-size: 0.7rem;
     }
    
-    
-    .Projectsection{
-        height: 1700px;
-    }  
+     
+     .Projectsection{
+        height: 2500px;
+    }   
 
 }
 
 @media screen and (max-width:580px) {
     .Projectsection{
-        height: 1950px;
+        height: 2750px;
     }
 }
 
@@ -884,7 +895,7 @@ footer .footer-contact span:last-child{
 
     
     .Projectsection{
-        height: 2200px;
+        height: 3200px;
     }  
 
 
@@ -961,7 +972,7 @@ footer .footer-contact span:last-child{
     }
       
     .Projectsection{
-        height: 2400px;
+        height: 3300px;
     }  
 
    
@@ -1015,7 +1026,7 @@ footer .footer-contact span:last-child{
     }  
 
     .Projectsection{
-        height: 2600px;
+        height: 3700px;
     }
     
    
@@ -1023,7 +1034,7 @@ footer .footer-contact span:last-child{
 
 @media screen and (max-width:340px)
 {
-    .Projectsection{
+    /* .Projectsection{
         height: 2800px;
-    }
+    } */
 }

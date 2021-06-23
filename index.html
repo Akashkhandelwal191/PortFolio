@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- BootStrap Min Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <title>Akash Khandelwal</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="Image/Fav2.jpg">
+    <link rel="icon" href="Image/Fav2.jpg" />
 
+    <!-- Aos library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Animate Css -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Zilla+Slab:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@100&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Slick Theme Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Slick Min Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Zilla+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom Css     -->
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style.css" />
 
     <!-- WebFonts Css -->
-    <link rel="stylesheet" href="Css/all.css">
+    <link rel="stylesheet" href="Css/all.css" />
 
     <!-- Jquery -->
-    <script src="jquery-3.6.0.min.js"></script>
-
+    <script src="Js/jquery-3.6.0.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('#icon').click(function () {
-                $('ul').toggleClass('show')
-            });
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $("ul").toggleClass("show");
         });
+      });
     </script>
     <script>
-
-        $(function () {
-            $("body").scrollspy({
-                target: "#myNavbar",
-                offset: 50
-            })
-        })
-
-
+      $(function () {
+        $("body").scrollspy({
+          target: "#myNavbar",
+          offset: 50,
+        });
+      });
     </script>
+  </head>
 
-</head>
-
-<body onload="setTimeout(myFunction,3000)">
+  <body onload="setTimeout(myFunction,3000)">
     <div id="loader">
-        <h1>Loading Akash PortFolio</h1>
+      <h1>Loading Akash PortFolio</h1>
     </div>
 
     <!-- Scroll bottom to top Start -->
@@ -70,938 +88,1425 @@
 
     <!-- Cookies Popup Section Start -->
     <div id="cookies">
-        <h4>Cookies</h4>
-        <div id="fr"> <i class="fas fa-times"></i> </div>
-        <span></span>
-        <p>We Use Cookies For better User Experience.</p>
-        <div class="cookbuttons">
-
-            <button type="button" class="cookbtn">Accept</button>
-            <button type="button" class="cookbtn">No,Thanks</button>
-        </div>
+      <h4>Cookies</h4>
+      <div id="fr"><i class="fas fa-times"></i></div>
+      <span></span>
+      <p>We Use Cookies For better User Experience.</p>
+      <div class="cookbuttons">
+        <button type="button" class="cookbtn">Accept</button>
+        <button type="button" class="cookbtn">No,Thanks</button>
+      </div>
     </div>
     <!-- Cookies Popup Section End -->
 
-
-
     <div id="blur">
-        <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Akash Khandelwal</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#myskills">Skill</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#AboutMe">AboutMe</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Blogs">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
+      <nav
+        id="myNavbar"
+        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Akash Khandelwal</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#myskills">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AboutMe">AboutMe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Blogs">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="container-fluid header" id="home">
+        <div class="mainhead-super">
+          <div id="mainhead">
+            <h1>
+              Welcome To My
+              <span style="color: rgba(14, 105, 180, 0.877)">PortFolio!</span>
+            </h1>
+          </div>
+          <div class="mainhead2">
+            <h1><span class="type"></span></h1>
+          </div>
+          <div class="mango">
+            <a
+              href="https://drive.google.com/file/d/1UGPzkZ82RAJQqXdTFWeD0QKDReQuMT3d/view?usp=sharing"
+              class="btn2"
+              >Download Resume</a
+            >
+          </div>
 
+          <div class="SocialMedia">
+            <!-- <h2>Connect With Me</h2> -->
+            <iframe
+              src="SocailMedia.html"
+              frameborder="0"
+              width="100%"
+            ></iframe>
+          </div>
 
-                    </ul>
+          <div class="Scrollbtn-main">
+            <a href="#AboutMe">
+              <div class="Scrollbtn"></div>
+              <div class="Scrollbtn"></div>
+              <div class="Scrollbtn"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- header-End-->
 
-                </div>
-            </div>
-        </nav>
-        <section class="container-fluid header" id="home">
-            <div class="mainhead-super">
-                <div id="mainhead">
-                    <h1>Welcome To My <span style="color:rgba(14, 105, 180, 0.877)">PortFolio!</span></h1>
-                </div>
-                <div class="mainhead2">
-                    <h1><span class="type"></span></h1>
-                </div>
-                <div class="mango">
-
-                    <a href="https://drive.google.com/file/d/1UGPzkZ82RAJQqXdTFWeD0QKDReQuMT3d/view?usp=sharing"
-                        class="btn2">Download Resume</a>
-                </div>
-
-
-                <div class="SocialMedia">
-                    <!-- <h2>Connect With Me</h2> -->
-                    <iframe src="SocailMedia.html" frameborder="0" width="100%"></iframe>
-                </div>
-
-                <div class="Scrollbtn-main">
-                    <a href="#AboutMe">
-                        <div class="Scrollbtn"> </div>
-                        <div class="Scrollbtn"> </div>
-                        <div class="Scrollbtn"> </div>
-                    </a>
-                </div>
-
-
-            </div>
-
-        </section>
-        <!-- header-End-->
-
-
-        <!-- Myskills Section Start -->
-        <section id="myskills">
-            <!-- <iframe src="Myskills2.html" width="100%" height="1500px"></iframe> -->
-            <header class="text-center my-3">
-                <h2 class="text-uppercase lined">Skills &amp; Abilities</h2>
-                <div class="lined-bottom"></div>
-                <br>
-                <h5>Here is What <span style="color:blue">I Have Learned so Far</span></h5>
-            </header>
-            <div class="container my-5 moveanimation" data-aos="flip-up">
+      <!-- Myskills Section Start -->
+      <section id="myskills">
+        <!-- <iframe src="Myskills2.html" width="100%" height="1500px"></iframe> -->
+        <header class="text-center my-3">
+          <h2 class="text-uppercase lined">Skills &amp; Abilities</h2>
+          <div class="lined-bottom"></div>
+          <br />
+          <h5>
+            Here is What <span style="color: blue">I Have Learned so Far</span>
+          </h5>
+        </header>
+        <div class="container my-5 moveanimation" data-aos="flip-up">
+          <div class="row">
+            <div class="col-md-5 col-sm-11 col-xs-11">
+              <h4 class="text-center">Concepts</h4>
+              <br />
+              <div class="mr15">
                 <div class="row">
-                    <div class="col-md-5 col-sm-11 col-xs-11">
-                        <h4 class="text-center">Concepts</h4><br>
-                        <div class="mr15">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <p class="ptag"> OOPs </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="74" style="width: 74%;"
-                                            aria-valuenow="74">
-                                            <div class="percentage">74%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Data Structures </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="50" style="width: 50%;"
-                                            aria-valuenow="50">
-                                            <div class="percentage">50%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Algorithms </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="56" style="width: 56%;"
-                                            aria-valuenow="56">
-                                            <div class="percentage">56%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> DBMS </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="70">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="text-center">
-                                <h4>Web Technology</h4>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> HTML5 </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out"
-                                            role="progressbar" data-transitiongoal="75" style="width: 75%;"
-                                            aria-valuenow="75">
-                                            <div class="percentage">75%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> CSS3 </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="80" style="width: 80%;"
-                                            aria-valuenow="65">
-                                            <div class="percentage">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> JavaScript </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="90" style="width: 90%;"
-                                            aria-valuenow="60">
-                                            <div class="percentage">90%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> PHP </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="30" style="width: 30%;"
-                                            aria-valuenow="30">
-                                            <div class="percentage">30%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                            <br>
-                            <h4 class="text-center">Database Management Systems
-                            </h4><br>
-                            <div class="text-center">
-                                <p>
-                                    <strong>RDBMS</strong>
-                                </p>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> MySQL </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="70">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> MongoDB </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="50" style="width: 50%;"
-                                            aria-valuenow="50">
-                                            <div class="percentage">50%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Firebase </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="50">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <br>
-                            <div>
-                                <h4 class="text-center">Developer Tools</h4>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Microsoft Visual Studio </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="90" style="width: 90%;"
-                                            aria-valuenow="90">
-                                            <div class="percentage">90%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Sublime Text </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="70">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Brackets </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="80" style="width: 80%;"
-                                            aria-valuenow="80">
-                                            <div class="percentage">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Pycharm </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="70">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                        <br>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">OOPs</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="74"
+                        style="width: 74%"
+                        aria-valuenow="74"
+                      >
+                        <div class="percentage">74%</div>
+                      </div>
                     </div>
-                    <div class="col-md-5 col-sm-11 col-xs-11 ml15">
-                        <h4 class="text-center">
-                            Programming Languages
-                        </h4><br>
-                        <div class="mr15 ml15">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> C </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="75" style="width: 75%;"
-                                            aria-valuenow="75">
-                                            <div class="percentage">75%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> C++ </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="85" style="width: 85%;"
-                                            aria-valuenow="85">
-                                            <div class="percentage">85%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Java </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="70">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Python </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="80" style="width: 80%;"
-                                            aria-valuenow="80">
-                                            <div class="percentage">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
-                            <div>
-                                <h4 class="text-center">Frontend Frameworks And Libraries</h4>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Bootstrap 5 </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="80" style="width: 80%;"
-                                            aria-valuenow="80">
-                                            <div class="percentage">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="text-center">
-                                <p>
-                                    <strong>Preprocessor</strong>
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> SASS / SCSS </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="60" style="width: 60%;"
-                                            aria-valuenow="60">
-                                            <div class="percentage">60%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Jquery </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="70" style="width: 70%;"
-                                            aria-valuenow="70">
-                                            <div class="percentage">70%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> ReactJs </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="60" style="width: 60%;"
-                                            aria-valuenow="60">
-                                            <div class="percentage">60%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Ajax </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="80" style="width: 80%;"
-                                            aria-valuenow="60">
-                                            <div class="percentage">80%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
-                            <div>
-                                <h4 class="text-center">Backend Frameworks</h4>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Django </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="60" style="width: 60%;"
-                                            aria-valuenow="60">
-                                            <div class="percentage">60%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Flask </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="50" style="width: 50%;"
-                                            aria-valuenow="50">
-                                            <div class="percentage">50%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> NodeJs </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="60" style="width: 60%;"
-                                            aria-valuenow="60">
-                                            <div class="percentage">60%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
-                            <br>
-                            <h4 class="text-center">Version Control System</h4><br>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <p class="ptag"> Git/GitHub </p>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <div class="progress progress-striped active ">
-                                        <div class="progress progress-striped progress-bar progress-bar-info six-sec-ease-in-out "
-                                            role="progressbar" data-transitiongoal="90" style="width: 90%;"
-                                            aria-valuenow="90">
-                                            <div class="percentage">90%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-
-
-            </div>
-
-        </section>
-        <!-- Myskills Section End -->
-
-
-        <!-- About Me Section Start -->
-        <section id="AboutMe">
-            <h1 id="abouthead">Get To Know <span id="abouthead2">Me </span></h1>
-            <div class="lined-bottom lined2"></div>
-            <div id="image"><img src="Image/AkashKhandelwal.jpg" alt=""> </div>
-            <div id="content" data-aos="zoom-in">
-                <div class="sub-content">
-                    <p> <b>A Little Bit <span style="color:blue"> About Myself </span></b></p>
-                    <p>Hi! myself Akash Khandelwal. I have completed my graduation in Bsc Computer Science from
-                        St. Aloysius College Jabalpur. I had completed my Matriculation and Intermediate
-                        from Vaishnavi Public School,Nowrozabad Distt Umaria and secured 78% in MP board and 83% in
-                        MP board respectively.</p>
-                    <br>
-                    <p>I am an innovative and enthusiastic person. I am focused and learning new things excites me. My
-                        passion
-                        in life is to gain knowledge. Knowledge gives you power to be right and better than others.I
-                        don't
-                        fear
-                        failures or rejections they are ways to enrich you and glorify your personality. Failures are
-                        experiences you gain from your mistakes.</p>
-                    <br>
-                    <p>I aspire to be an excellent Software Engineer and use my skills to make something productive and
-                        helpful
-                        for the nation. My greatest strength is my positive attitude , even during the most hardest of
-                        times. My
-                        only weakness is to never give up no matter how hard things hit me , how much they destroy me I
-                        accept
-                        them as a challenge and don't let them break me. </p>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Data Structures</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="50"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                      >
+                        <div class="percentage">50%</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <!-- About Me Section End -->
-
-        <!-- Project Section Start  -->
-        <section id="Project">
-            <div class="Projectsection">
-                <h1><b>Projects</b></h1>
-                <div class="Projectsub" data-aos="fade-left">
-                    <h4 class="headline">Food Delivery Site</h4>
-                    <div class="ProjectContent">
-                        <p>I made a responsive Food delivery site containing Four section Home,Services,AboutUs and
-                            Contact us Menu-Category Page and Single
-                            Menu Category Page.I would love to make website.</p>
-
-                        <a href="https://akashkhandelwal191.github.io/FoodDelivery/" target="newtab"
-                            class="btn btn4">Visit</a>
-                        <a href="https://github.com/Akashkhandelwal191/FoodDelivery" class="btn btn4">Source Code</a>
-
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Algorithms</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="56"
+                        style="width: 56%"
+                        aria-valuenow="56"
+                      >
+                        <div class="percentage">56%</div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-                <div class="Projectsub" data-aos="fade-right">
-                    <h4 class="headline">Cafe Site</h4>
-                    <div class="ProjectContent">
-                        <p>I have made a responsive Cafe Site Using HTML5,CSS3 and Javascript With Parallax Scrolling
-                            behavior. Used jquery and a little bit of Bootstrap.It has Various Section Home,
-                            Gallery,Services,About Us and Contact Us.</p>
-
-                        <a href="https://akashkhandelwal191.github.io/CafeSite/" target="newtab"
-                            class="btn btn4">Visit</a>
-                        <a href="https://github.com/Akashkhandelwal191/CafeSite" class="btn btn4">Source Code</a>
-
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">DBMS</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-
-                <div class="Projectsub" data-aos="fade-left">
-                    <h4 class="headline">Virtual Desktop Assistant</h4>
-                    <div class="ProjectContent">
-                        <p>Made Virtual Desktop Assistant using Python and Used lot of library for make this Assistant
-                            Convenient named "Alexa"(Wolfram Alpha,Open WeatherAPI,NewsAPI,Speech
-                            Recognition,etc.)</p>
-
-                        <a href="https://github.com/Akashkhandelwal191/VirtualDesktopAssistant" target="newtab"
-                            class="btn btn4">Visit</a>
-                        <a href="https://github.com/Akashkhandelwal191/VirtualDesktopAssistant" class="btn btn4">Source
-                            Code</a>
-                    </div>
+                <br />
+                <div class="text-center">
+                  <h4>Web Technology</h4>
                 </div>
-
-
-                <div class="Projectsub" data-aos="fade-right">
-                    <h4 class="headline">Quiz Based Website</h4>
-                    <div class="ProjectContent">
-                        <p>I have made a responsive Interview Based Quiz Website Using HTML5,CSS3 And Pure Javascript.
-                            Added
-                            lot
-                            of topic
-                            related to Computer Science.</p>
-
-                        <a href="https://akashkhandelwal191.github.io/InterviewQuiz/" target="newtab"
-                            class="btn btn4">Visit</a>
-                        <a href="https://github.com/Akashkhandelwal191/InterviewQuiz" class="btn btn4">Source Code</a>
+                <br />
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">HTML5</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="75"
+                        style="width: 75%"
+                        aria-valuenow="75"
+                      >
+                        <div class="percentage">75%</div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-
-                <div class="Projectsub" data-aos="fade-left">
-                    <h4 class="headline">Keep Notes</h4>
-                    <div class="ProjectContent">
-                        <p>I have made a responsive Keep Notes Web based Application Using HTML5,CSS3,Javascript And
-                            Bootstrap5.Using Concept
-                            of local and Session Storage.</p>
-                        <a href="https://akashkhandelwal191.github.io/KeepNotes/" target="newtab"
-                            class="btn btn4">Visit</a>
-                        <a href="https://github.com/Akashkhandelwal191/KeepNotes" class="btn btn4">Source Code</a>
-
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">CSS3</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="80"
+                        style="width: 80%"
+                        aria-valuenow="65"
+                      >
+                        <div class="percentage">80%</div>
+                      </div>
                     </div>
-
-
+                  </div>
                 </div>
-
-
-                <div class="Projectsub" data-aos="fade-right">
-                    <h4 class="headline">Music Player</h4>
-                    <div class="ProjectContent">
-                        <p>I have made a responsive Music Player Using HTML5,CSS3,Javascript And Bootstrap5.</p>
-                        <a href="https://akashkhandelwal191.github.io/MusicPlayer/" target="newtab"
-                            class="btn btn4">Visit</a>
-                        <a href="https://github.com/Akashkhandelwal191/MusicPlayer" class="btn btn4">Source Code</a>
-                    </div>
-                </div>
-
-                <div class="Projectsub" data-aos="fade-left">
-                    <div class="ProjectContent">
-                        <p>Made a personalised website showing what skills I have learned so far and some of my Projects
-                            that
-                            done yet.You
-                            guessed it right! it's the one you are looking at right now(thought of mentioning it too:))
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- Project Section End  -->
-
-
-        <!-- Blogs Section Start -->
-        <section id="Blogs">
-
-            <h1>My<span style="color:blue">Blogs</span></h1>
-            <div class="lined-bottom lined2"></div>
-            <blockquote class="text-white text-center">
-                <q style="font-size:1.5rem;" id="quote">Whatever you are, be a good one.</q>
-                <cite class="d-block" style="color:gray">-Abraham Lincoln</cite>
-            </blockquote>
-            <div class="container" data-aos="zoom-out">
-                <div class="row slider">
-                    <div class="card col-md-12 mx-2 details">
-                        <div class="img-container">
-                            <img src="https://1.bp.blogspot.com/-Z1Fm_h0qTkQ/X1JDOS5qM0I/AAAAAAAAA9E/A4RLxbHJZtcpins9NjtKIsgFUDa3bdFcwCNcBGAsYHQ/s2400/5e417cd336a72b06a86c73e7_Flutter-Tutorial-Header%25402x.jpg"
-                                class="card-img-top imgscale" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">WHAT IS FLUTTER?WHY IT IS FAMOUS TODAY?</h5>
-                            <span>September 04, 2020</span>
-                            <p class="card-text">Flutter is an open-source mobile SDK developer can use to build
-                                native-looking Android and iOS applications from the same code base.</p>
-                            <a href="https://khandelwal1999.blogspot.com/2020/09/what-is-flutterwhy-it-is-famous-today.html"
-                                class="btn btn-danger">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card col-md-12 mx-2 details">
-                        <div class="img-container">
-                            <img src="https://1.bp.blogspot.com/-VIy3k7lOZbI/XtHL7nJJ3TI/AAAAAAAAAuY/2lLIW3VNpdYzkVuTOTLh5F1kOjbCHPZgwCK4BGAsYHg/mobile-websites.jpg"
-                                class="card-img-top imgscale alt=" ...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">TOP 5 BEST PLATFORMS FOR DOING COMPETITIVE PROGRAMMING</h5>
-                            <span>May 26, 2020</span>
-                            <p class="card-text">If you are beginner in competitive programming i recommend you first
-                                you have to proficient with any particular language.</p>
-                            <a href="https://khandelwal1999.blogspot.com/2020/05/top-5-best-platforms-that-i-prefer-to.html"
-                                class="btn btn-danger">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card col-md-12 mx-2 details">
-                        <div class="img-container">
-                            <img src="https://1.bp.blogspot.com/-bq-_Uwgzvsk/XtEafhnuvqI/AAAAAAAAAtI/aS5bc5GBkYoLStHWqTYSJQ9lNRhtKzNQQCK4BGAsYHg/Competitive-Programming.jpg"
-                                class="card-img-top imgscale" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">WHAT EXACTLY IS COMPETITIVE PROGRAMMING</h5>
-                            <span>May 26, 2020</span>
-                            <p class="card-text">If you want to take your programming to next level, you must have a
-                                strong mathematical background.</p>
-                            <a href="https://khandelwal1999.blogspot.com/2020/05/what-exactly-is-competitive-programming.html"
-                                class="btn btn-danger">Read More</a>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-
-
-        </section>
-        <!-- Blogs Section End -->
-
-        <!-- Contact Section Start -->
-        <section id="contact">
-            <div id="contact-head">
-                <h4 class="h-unique"> Give Your <span style="color:rgba(17, 19, 20, 0.877)">Feedback </span>Here </h4>
-                <div><img src="Image/email.jpg" alt=""></div>
-                <h4 class="h-unique">Shoot me a <span style="color:rgba(1, 3, 5, 0.877)"> Message</span></h4>
-            </div>
-            <div id="contact-box">
-                <form id="my-form" action="https://formspree.io/f/xwkwyweo" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" onkeypress="return (event.charCode > 64 && 
-                    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" id="name"
-                            placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message: </label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type Your Feedback"
-                            required></textarea>
-                    </div>
-
-                    <button class="btn btn3 btn-dark" type="submit" id="my-form-button"> Send Message </button>
-                    <p id="my-form-status"></p>
-                </form>
-            </div>
-
-        </section>
-        <!-- Contact Section End -->
-
-
-        <!-- Footer Section Start -->
-        <footer>
-            <div class="container my-3">
 
                 <div class="row">
-
-                    <div class="col-md-4">
-                        <h5 class="my-2">Quick Links</h5>
-                        <span class="footerlinks"><a href="#home">Home</a></span>
-                        <span class="footerlinks"><a href="#myskills">Skills</a></span>
-                        <span class="footerlinks"><a href="#AboutMe">AboutMe</a></span>
-                        <span class="footerlinks"><a href="#Project">Projects</a></span>
-                        <span class="footerlinks"><a href="#Blogs">Blog</a></span>
-                        <span class="footerlinks"><a href="#contact">Contact Us</a></span>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">JavaScript</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="90"
+                        style="width: 90%"
+                        aria-valuenow="60"
+                      >
+                        <div class="percentage">90%</div>
+                      </div>
                     </div>
-                    <div class="col-md-4">
-                        <h5 class="my-2">Social Media</h5>
-                        <span class="footerlinks"><a href="https://m.facebook.com/akash.khandelwal.1042?ref=bookmarks" target="_blank">Facebook</a></span>
-                        <span class="footerlinks"><a href="https://twitter.com/skykhandelwal26" target="_blank">Twitter</a></span>
-                        <span class="footerlinks"><a href="https://www.instagram.com/skykhandelwal1999" target="_blank">Instagram</a></span>
-                        <span class="footerlinks"><a href="https://www.linkedin.com/in/akash-khandelwal-5b09531aa" target="_blank">Linkedin</a></span>
-                        <span class="footerlinks"><a href="https://www.youtube.com/channel/UCW6rW8esjHbIMTccfbiJdPw" target="_blank">YouTube</a></span>
-                        <span class="footerlinks"><a href="https://github.com/Akashkhandelwal191" target="_blank">GitHub</a></span>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="my-2">Get In Touch</h5>
-                        <div class="footer-contact">
-                        <span class="mx-2"><i class="fas fa-user"></i></span>
-                        <span>Akash Khandelwal</span>
-                        </div>
-                        <div class="footer-contact">
-                            <span class="mx-2"><i class="fas fa-map-marker-alt"></i></span>
-                            <span>Jabalpur,Madhya Pradesh,India</span>
-                        </div>
-                        <div class="footer-contact">
-                            <span class="mx-2"><i class="fas fa-phone"></i></span>
-                            <span><a href="tel:9993869873">+91 9993869873</a></span>
-                        </div>
-                        <div class="footer-contact">
-                            <span class="mx-2"><i class="fas fa-envelope"></i></span>
-                            <span><a href="mailto:skykhandelwal1999@gmail.com">
-                                skykhandelwal1999@gmail.com</a></span>
-                        </div>
-                      
-                    </div>
-
+                  </div>
                 </div>
 
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">PHP</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="30"
+                        style="width: 30%"
+                        aria-valuenow="30"
+                      >
+                        <div class="percentage">30%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            </div>
-            <div class="center">
-                Copyright &copy; Akash Khandelwal. All rights reserved!
-            </div>
-        </footer>
-        <!-- Footer Section End -->
+                <br />
+                <h4 class="text-center">Database Management Systems</h4>
+                <br />
+                <div class="text-center">
+                  <p>
+                    <strong>RDBMS</strong>
+                  </p>
+                </div>
 
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">MySQL</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">MongoDB</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="50"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                      >
+                        <div class="percentage">50%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Firebase</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="50"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <div>
+                  <h4 class="text-center">Developer Tools</h4>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Microsoft Visual Studio</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="90"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                      >
+                        <div class="percentage">90%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Sublime Text</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Brackets</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="80"
+                        style="width: 80%"
+                        aria-valuenow="80"
+                      >
+                        <div class="percentage">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Pycharm</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+            </div>
+            <div class="col-md-5 col-sm-11 col-xs-11 ml15">
+              <h4 class="text-center">Programming Languages</h4>
+              <br />
+              <div class="mr15 ml15">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">C</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="75"
+                        style="width: 75%"
+                        aria-valuenow="75"
+                      >
+                        <div class="percentage">75%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">C++</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="85"
+                        style="width: 85%"
+                        aria-valuenow="85"
+                      >
+                        <div class="percentage">85%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Java</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Python</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="80"
+                        style="width: 80%"
+                        aria-valuenow="80"
+                      >
+                        <div class="percentage">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <div>
+                  <h4 class="text-center">Frontend Frameworks And Libraries</h4>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Bootstrap 5</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="80"
+                        style="width: 80%"
+                        aria-valuenow="80"
+                      >
+                        <div class="percentage">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">SASS / SCSS(preprocessor)</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="60"
+                        style="width: 60%"
+                        aria-valuenow="60"
+                      >
+                        <div class="percentage">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Jquery</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="70"
+                        style="width: 70%"
+                        aria-valuenow="70"
+                      >
+                        <div class="percentage">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">ReactJs</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="60"
+                        style="width: 60%"
+                        aria-valuenow="60"
+                      >
+                        <div class="percentage">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Material UI</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="80"
+                        style="width: 80%"
+                        aria-valuenow="60"
+                      >
+                        <div class="percentage">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <div>
+                  <h4 class="text-center">
+                    Backend Frameworks / Run Time Environment
+                  </h4>
+                </div>
+                <br />
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">NodeJs</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="60"
+                        style="width: 60%"
+                        aria-valuenow="60"
+                      >
+                        <div class="percentage">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Express Js</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="60"
+                        style="width: 60%"
+                        aria-valuenow="60"
+                      >
+                        <div class="percentage">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+                <h4 class="text-center">Version Control System</h4>
+                <br />
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <p class="ptag">Git/GitHub</p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="progress progress-striped active">
+                      <div
+                        class="
+                          progress
+                          progress-striped
+                          progress-bar
+                          progress-bar-info
+                          six-sec-ease-in-out
+                        "
+                        role="progressbar"
+                        data-transitiongoal="90"
+                        style="width: 90%"
+                        aria-valuenow="90"
+                      >
+                        <div class="percentage">90%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Myskills Section End -->
+
+      <!-- About Me Section Start -->
+      <section id="AboutMe">
+        <h1 id="abouthead">Get To Know <span id="abouthead2">Me </span></h1>
+        <div class="lined-bottom lined2"></div>
+        <div id="image"><img src="Image/AkashKhandelwal.jpg" alt="" /></div>
+        <div id="content" data-aos="zoom-in">
+          <div class="sub-content">
+            <p>
+              <b
+                >A Little Bit <span style="color: blue"> About Myself </span></b
+              >
+            </p>
+            <p>
+              Hi! myself Akash Khandelwal. I have completed my graduation in Bsc
+              Computer Science from St. Aloysius College Jabalpur. I had
+              completed my Matriculation and Intermediate from Vaishnavi Public
+              School,Nowrozabad Distt Umaria and secured 78% in MP board and 83%
+              in MP board respectively.
+            </p>
+            <br />
+            <p>
+              I am an innovative and enthusiastic person. I am focused and
+              learning new things excites me. My passion in life is to gain
+              knowledge. Knowledge gives you power to be right and better than
+              others.I don't fear failures or rejections they are ways to enrich
+              you and glorify your personality. Failures are experiences you
+              gain from your mistakes.
+            </p>
+            <br />
+            <p>
+              I aspire to be an excellent Software Engineer and use my skills to
+              make something productive and helpful for the nation. My greatest
+              strength is my positive attitude , even during the most hardest of
+              times. My only weakness is to never give up no matter how hard
+              things hit me , how much they destroy me I accept them as a
+              challenge and don't let them break me.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About Me Section End -->
+
+      <!-- Project Section Start  -->
+      <section id="Project">
+        <div class="Projectsection">
+          <h1><b>Projects</b></h1>
+
+          <div class="Projectsub" data-aos="fade-left">
+            <h4 class="headline">Covid-19 Real Time Tracker</h4>
+            <div class="ProjectContent">
+              <p>
+                I made a responsive Covid-19 Real Time Tracker Using API.It has
+                Various Section Home,Global Covid-19 Dashboard,India Covid-19
+                Dashboard,About, Symptoms,How it
+                Spreads,Prevention,Contact.(Front-End Technology Used :
+                HTML5,CSS3,JavaScript,Jquery And Bootstrap5) And(Back-End
+                Technology Used: Firebase(For Storing Contact Form User
+                Details))
+              </p>
+
+              <a
+                href="https://akashkhandelwal191.github.io/Covid19Tracker/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/Covid19Tracker"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-right">
+            <h4 class="headline">News App</h4>
+            <div class="ProjectContent">
+              <p>
+                I made a responsive News App Using HTML5 ,CSS3,
+                Javascript,Jquery And Bootstrap5.It has different Categories
+                Home,Trending,Categories,About And Contact.Apart From that I
+                used Fetch method And Gnews API.
+              </p>
+
+              <a
+                href="https://akashkhandelwal191.github.io/Inews/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/Inews"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-left">
+            <h4 class="headline">Food Delivery Site</h4>
+            <div class="ProjectContent">
+              <p>
+                I made a responsive Food delivery site containing Four section
+                Home,Services,AboutUs and Contact us Menu-Category Page and
+                Single Menu Category Page.I would love to make website.
+              </p>
+
+              <a
+                href="https://akashkhandelwal191.github.io/FoodDelivery/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/FoodDelivery"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-right">
+            <h4 class="headline">Cafe Site</h4>
+            <div class="ProjectContent">
+              <p>
+                I have made a responsive Cafe Site Using HTML5,CSS3 and
+                Javascript With Parallax Scrolling behavior. Used jquery and a
+                little bit of Bootstrap.It has Various Section Home,
+                Gallery,Services,About Us and Contact Us.
+              </p>
+
+              <a
+                href="https://akashkhandelwal191.github.io/CafeSite/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/CafeSite"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-left">
+            <h4 class="headline">Virtual Desktop Assistant</h4>
+            <div class="ProjectContent">
+              <p>
+                Made Virtual Desktop Assistant using Python and Used lot of
+                library for make this Assistant Convenient named "Alexa"(Wolfram
+                Alpha,Open WeatherAPI,NewsAPI,Speech Recognition,etc.)
+              </p>
+
+              <a
+                href="https://github.com/Akashkhandelwal191/VirtualDesktopAssistant"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/VirtualDesktopAssistant"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-right">
+            <h4 class="headline">Quiz Based Website</h4>
+            <div class="ProjectContent">
+              <p>
+                I have made a responsive Interview Based Quiz Website Using
+                HTML5,CSS3 And Pure Javascript. Added lot of topic related to
+                Computer Science.
+              </p>
+
+              <a
+                href="https://akashkhandelwal191.github.io/InterviewQuiz/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/InterviewQuiz"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-left">
+            <h4 class="headline">Keep Notes</h4>
+            <div class="ProjectContent">
+              <p>
+                I have made a responsive Keep Notes Web based Application Using
+                HTML5,CSS3,Javascript And Bootstrap5.Using Concept of local and
+                Session Storage.
+              </p>
+              <a
+                href="https://akashkhandelwal191.github.io/KeepNotes/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/KeepNotes"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-right">
+            <h4 class="headline">Music Player</h4>
+            <div class="ProjectContent">
+              <p>
+                I have made a responsive Music Player Using
+                HTML5,CSS3,Javascript And Bootstrap5.
+              </p>
+              <a
+                href="https://akashkhandelwal191.github.io/MusicPlayer/"
+                target="newtab"
+                class="btn btn4"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/Akashkhandelwal191/MusicPlayer"
+                class="btn btn4"
+                >Source Code</a
+              >
+            </div>
+          </div>
+
+          <div class="Projectsub" data-aos="fade-left">
+            <div class="ProjectContent">
+              <p>
+                Made a personalised website showing what skills I have learned
+                so far and some of my Projects that done yet.You guessed it
+                right! it's the one you are looking at right now(thought of
+                mentioning it too:))
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section End  -->
+
+      <!-- Blogs Section Start -->
+      <section id="Blogs">
+        <h1>My<span style="color: blue">Blogs</span></h1>
+        <div class="lined-bottom lined2"></div>
+        <blockquote class="text-white text-center">
+          <q style="font-size: 1.5rem" id="quote"
+            >Whatever you are, be a good one.</q
+          >
+          <cite class="d-block" style="color: gray">-Abraham Lincoln</cite>
+        </blockquote>
+        <div class="container" data-aos="zoom-out">
+          <div class="row slider">
+            <div class="card col-md-12 mx-2 details">
+              <div class="img-container">
+                <img
+                  src="https://1.bp.blogspot.com/-Z1Fm_h0qTkQ/X1JDOS5qM0I/AAAAAAAAA9E/A4RLxbHJZtcpins9NjtKIsgFUDa3bdFcwCNcBGAsYHQ/s2400/5e417cd336a72b06a86c73e7_Flutter-Tutorial-Header%25402x.jpg"
+                  class="card-img-top imgscale"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  WHAT IS FLUTTER?WHY IT IS FAMOUS TODAY?
+                </h5>
+                <span>September 04, 2020</span>
+                <p class="card-text">
+                  Flutter is an open-source mobile SDK developer can use to
+                  build native-looking Android and iOS applications from the
+                  same code base.
+                </p>
+                <a
+                  href="https://khandelwal1999.blogspot.com/2020/09/what-is-flutterwhy-it-is-famous-today.html"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="card col-md-12 mx-2 details">
+              <div class="img-container">
+                <img
+                src="https://1.bp.blogspot.com/-VIy3k7lOZbI/XtHL7nJJ3TI/AAAAAAAAAuY/2lLIW3VNpdYzkVuTOTLh5F1kOjbCHPZgwCK4BGAsYHg/mobile-websites.jpg"
+                class="card-img-top imgscale alt=" ..."/>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  TOP 5 BEST PLATFORMS FOR DOING COMPETITIVE PROGRAMMING
+                </h5>
+                <span>May 26, 2020</span>
+                <p class="card-text">
+                  If you are beginner in competitive programming i recommend you
+                  first you have to proficient with any particular language.
+                </p>
+                <a
+                  href="https://khandelwal1999.blogspot.com/2020/05/top-5-best-platforms-that-i-prefer-to.html"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="card col-md-12 mx-2 details">
+              <div class="img-container">
+                <img
+                  src="https://1.bp.blogspot.com/-bq-_Uwgzvsk/XtEafhnuvqI/AAAAAAAAAtI/aS5bc5GBkYoLStHWqTYSJQ9lNRhtKzNQQCK4BGAsYHg/Competitive-Programming.jpg"
+                  class="card-img-top imgscale"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  WHAT EXACTLY IS COMPETITIVE PROGRAMMING
+                </h5>
+                <span>May 26, 2020</span>
+                <p class="card-text">
+                  If you want to take your programming to next level, you must
+                  have a strong mathematical background.
+                </p>
+                <a
+                  href="https://khandelwal1999.blogspot.com/2020/05/what-exactly-is-competitive-programming.html"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blogs Section End -->
+
+      <!-- Contact Section Start -->
+      <section id="contact">
+        <div id="contact-head">
+          <h4 class="h-unique">
+            Give Your
+            <span style="color: rgba(17, 19, 20, 0.877)">Feedback </span>Here
+          </h4>
+          <div><img src="Image/email.jpg" alt="" /></div>
+          <h4 class="h-unique">
+            Shoot me a <span style="color: rgba(1, 3, 5, 0.877)"> Message</span>
+          </h4>
+        </div>
+        <div id="contact-box">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xwkwyweo"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                onkeypress="return (event.charCode > 64 && 
+                    event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Type Your Feedback"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn3 btn-dark" type="submit" id="my-form-button">
+              Send Message
+            </button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+
+      <!-- Footer Section Start -->
+      <footer>
+        <div class="container my-3">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="my-2">Quick Links</h5>
+              <span class="footerlinks"><a href="#home">Home</a></span>
+              <span class="footerlinks"><a href="#myskills">Skills</a></span>
+              <span class="footerlinks"><a href="#AboutMe">AboutMe</a></span>
+              <span class="footerlinks"><a href="#Project">Projects</a></span>
+              <span class="footerlinks"><a href="#Blogs">Blog</a></span>
+              <span class="footerlinks"><a href="#contact">Contact Us</a></span>
+            </div>
+            <div class="col-md-4">
+              <h5 class="my-2">Social Media</h5>
+
+              <div class="footer-socialcontact">
+                <span
+                  ><img src="Image/facebook.svg" class="img-fluid" alt=""
+                /></span>
+                <span class="footerlinks"
+                  ><a
+                    href="https://m.facebook.com/akash.khandelwal.1042?ref=bookmarks"
+                    target="_blank"
+                    >Facebook</a
+                  ></span
+                >
+              </div>
+
+              <div class="footer-socialcontact">
+                <span
+                  ><img src="Image/twitter.svg" class="img-fluid" alt=""
+                /></span>
+                <span class="footerlinks"
+                  ><a href="https://twitter.com/skykhandelwal26" target="_blank"
+                    >Twitter</a
+                  ></span
+                >
+              </div>
+
+              <div class="footer-socialcontact">
+                <span
+                  ><img src="Image/instagram.svg" class="img-fluid" alt=""
+                /></span>
+                <span class="footerlinks"
+                  ><a
+                    href="https://www.instagram.com/skykhandelwal1999"
+                    target="_blank"
+                    >Instagram</a
+                  ></span
+                >
+              </div>
+
+              <div class="footer-socialcontact">
+                <span
+                  ><img src="Image/linkedin.svg" class="img-fluid" alt=""
+                /></span>
+                <span class="footerlinks"
+                  ><a
+                    href="https://www.linkedin.com/in/akash-khandelwal-5b09531aa"
+                    target="_blank"
+                    >Linkedin</a
+                  ></span
+                >
+              </div>
+
+              <div class="footer-socialcontact">
+                <span
+                  ><img src="Image/youtube.svg" class="img-fluid" alt=""
+                /></span>
+                <span class="footerlinks"
+                  ><a
+                    href="https://www.youtube.com/channel/UCW6rW8esjHbIMTccfbiJdPw"
+                    target="_blank"
+                    >YouTube</a
+                  ></span
+                >
+              </div>
+
+              <div class="footer-socialcontact">
+                <span
+                  ><img src="Image/github2.svg" class="img-fluid" alt=""
+                /></span>
+                <span class="footerlinks"
+                  ><a
+                    href="https://github.com/Akashkhandelwal191"
+                    target="_blank"
+                    >GitHub</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5 class="my-2">Get In Touch</h5>
+              <div class="footer-contact">
+                <span class="mx-2"><i class="fas fa-user"></i></span>
+                <span>Akash Khandelwal</span>
+              </div>
+              <div class="footer-contact">
+                <span class="mx-2"><i class="fas fa-map-marker-alt"></i></span>
+                <span>Jabalpur,Madhya Pradesh,India</span>
+              </div>
+              <div class="footer-contact">
+                <span class="mx-2"><i class="fas fa-phone"></i></span>
+                <span><a href="tel:9993869873">+91 9993869873</a></span>
+              </div>
+              <div class="footer-contact">
+                <span class="mx-2"><i class="fas fa-envelope"></i></span>
+                <span
+                  ><a href="mailto:skykhandelwal1999@gmail.com">
+                    skykhandelwal1999@gmail.com</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          Copyright &copy; Akash Khandelwal. All rights reserved!
+        </div>
+      </footer>
+      <!-- Footer Section End -->
     </div>
     <!-- type js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
+    <!-- Popper Min Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-        crossorigin="anonymous"></script>
+    <!-- BootStrap Min Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous"></script>
 
+    <!-- Slick Min Js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+    ></script>
+
+     <!-- Aos JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            offset: 300,
-            duration: 1100,
-        });
+      AOS.init({
+        offset: 300,
+        duration: 1100,
+      });
     </script>
     <script>
-        $('.slider').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            centerMode: true,
-            centerPadding: '60px',
-            autoplay: true,
-            autoplaySpeed: 2000,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        centerMode: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false
-                    }
-                }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+      $(".slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        centerMode: true,
+        centerPadding: "60px",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              centerMode: false,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
     </script>
-    <script src="script.js"></script>
-
-</body>
-
+    <!-- Custom Js -->
+    <script src="Js/script.js"></script>
+  </body>
 </html>
