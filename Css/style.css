@@ -452,9 +452,9 @@ h3 {
 
 
 #image img {
-    width: 10%;
-    height: 80%;
-    border-radius: 130px;
+    width: 25%;
+    height: 50%;
+    border-radius: 25%;
     float: right;
     padding: 30px;
 }
